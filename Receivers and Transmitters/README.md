@@ -3,6 +3,7 @@
 ![Gemini Info](Images/diversity.png)
 
 This document describes various transmission modes used in long-range LoRa (Long Range) wireless communication for drones. These modes leverage LoRa's unique capabilities to improve Signal Quality (LQ), mitigate interference, and enhance reliability over extended distances, making them ideal for drone applications in diverse environments.
+
 ## Transmission Modes
 
 ### 1. Single Antenna
@@ -50,8 +51,6 @@ This document describes various transmission modes used in long-range LoRa (Long
 - **Limitations**:  
   - More complex and expensive hardware due to dual-band operation.  
 
----
-
 ## Transmission Mode Classification Chart
 
 | Mode                        | Frequency Channels      | Antennas (TX) | Antennas (RX)| Interference Mitigation | Signal Quality  | Receiver Type        |
@@ -61,8 +60,6 @@ This document describes various transmission modes used in long-range LoRa (Long
 | **True Diversity or Full Diversity**  | 1                      | 1             | 2             | High                    | High            | Diversity Receiver   |
 | **Gemini Mode (Single Band)**| 2 (within 1 band)     | 2        | 2             | Very High               | Very High       | Diversity Receiver   |
 | **Gemini Xrossband GemX (Dual Band)** | 2 (across 2 bands)     | 2             | 2                | Excellent               | Excellent       | Dual-band Receiver   |
-
----
 
 ## Summary
 
@@ -84,3 +81,5 @@ Understanding these modes enables the selection of appropriate communication sys
 - [ArduPilot: mLRS RC Overview](https://ardupilot.org/copter/docs/common-mlrs-rc.html)  
 - [ExpressLRS: Gemini Overview](https://www.expresslrs.org/software/gemini/)  
 - [ExpressLRS Documentation](https://www.expresslrs.org/)  
+
+[⬅️ Go Back to Main README](../README.md)
