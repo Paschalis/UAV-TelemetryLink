@@ -1,0 +1,108 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f5f5f5;
+    color: #333;
+}
+
+header {
+    background-color: #4C8F9F;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+.container {
+    padding: 20px;
+    margin-bottom: 30px; /* Add space below the container */
+}
+
+.module {
+    margin: 20px 0;
+    padding: 15px;
+    background-color: white;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    max-width: 400px; /* Reduced the max-width */
+    flex: 1 1 calc(30% - 20px); /* Smaller size for the modules */
+    box-sizing: border-box;
+}
+
+.module h3 {
+    margin-top: 0;
+}
+
+.module img,
+.module video {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+
+footer {
+    text-align: center;
+    padding: 1px;
+    background-color: #4C8F9F;
+    color: white;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    margin-top: 30px; /* Add space above the footer */
+}
+
+.badge-link {
+    display: inline-block;
+    margin: 20px 0;
+    text-align: center;
+}
+
+.badge-link a {
+    text-decoration: none;
+    padding: 10px 20px;
+    background-color: #4C8F9F;
+    color: white;
+    border-radius: 5px;
+    font-weight: bold;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.badge-link a:hover {
+    background-color: #4C8F9F;
+}
+
+.module-group {
+    display: flex;
+    gap: 20px; /* Reduced space between modules */
+    justify-content: center; /* Center the group horizontally */
+    flex-wrap: wrap; /* Ensure responsive wrapping on smaller screens */
+    margin: 30px 0;
+}
+
+.module {
+    flex: 1 1 calc(30% - 20px); /* Adjusted for smaller modules */
+    box-sizing: border-box;
+    background-color: white;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 15px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.module h3 {
+    margin-top: 0;
+    font-size: 1rem; /* Reduced font size for smaller modules */
+}
+
+.module p {
+    margin: 10px 0;
+    font-size: 0.9rem; /* Slightly smaller font for readability */
+}
+
+video {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    border: 2px solid #ddd;
+}
