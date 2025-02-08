@@ -52,11 +52,11 @@ Below is an example of the hardware setup for mission planning:
 
 This repository contains a collection of designs for RX and TX boards under different transmission modes. More details about the transmission modes can be found in the [Transmission Modes Classification](Receivers%20and%20Transmitters/README.md).
 
-<div style="text-align:center; margin-top:20px;">
+<p align="center">
     <a href="https://TeodoraMiu.github.io/UAV-TelemetryLink/" target="_blank">
-        <img src="https://img.shields.io/badge/Visit_UAV_Telemetry_Link_Site-4C8F9F?style=for-the-badge&logo=github&logoColor=white&color=4C8F9F" alt="Visit FC Plus Sensor Module Site">
+        <img src="https://img.shields.io/badge/Visit_UAV_Telemetry_Link_Site-4C8F9F?style=for-the-badge&logo=github&logoColor=white&color=4C8F9F" alt="Visit UAV Telemetry Link Site">
     </a>
-</div>
+</p>
 
 ## 1. Antenna Diversity Boards
 
