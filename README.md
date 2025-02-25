@@ -76,7 +76,7 @@ This repository contains a collection of designs for RX and TX boards under diff
 ### RX Boards
 | Name        | Features                          | Preview                                                       |
 |-------------|-----------------------------------|------------------------------------------------------------|
-| TD1_2.4G    | Full diversity with improved range | [![Preview](Images/TD1_2.4G.png)](https://github.com/your-repo/boards/TD1_2.4G)   |
+| TD1_2.4G    | Full diversity with improved range | [![Preview](Images/TD1_2.4G.gif)](https://github.com/TeodoraMiu/UAV-TelemetryLink/tree/main/Receivers%20and%20Transmitters/True%20Antenna%20Diversity/ExpressLRS_2.4GHz/TD1_2.4G)  <p align="center"> Click on the image to view the files </p> |
 
 ### TX Boards
 | Name        | Features                          | Preview                                                       |
