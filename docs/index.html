@@ -16,63 +16,200 @@
         <!-- <div class="badge-link">
             <a href="#modules">View Module Previews</a>
         </div> -->
-
+        <div class="video-container">
+            <video autoplay loop muted playsinline>
+                <source src="Videos/background.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+        </div>
+        
         <h2>1. Antenna Diversity Boards</h2>
         <h3>RX Boards at 2.4GHz</h3>
         <div class="module-group">
-            
             <!-- Module 1 -->
             <div class="module">
                 <h3>AD1_2.4GHz</h3>
                 <p>Features: The receiver employs two antennas to select the best signal, a technique known as antenna diversity. This ensures reliable communication by mitigating signal loss caused by interference or obstacles.</p>
-                <video controls>
-                    <source src="Videos/AD1_2.4G.mp4" type="video/mp4">
-                    <!-- Fallback for older browsers -->
-                    Your browser does not support the video tag. Please download the video to view it: 
-                    <a href="Videos/AD1_2.4G.mp4">Download Video</a>
-                </video>
+                
+                <div class="media-container">
+                    <!-- Preview Image -->
+                    <div class="media-item">
+                        <img src="Images/AD.png" alt="Preview Image">
+                    </div>
+        
+                    <!-- Video -->
+                    <div class="media-item">
+                        <video controls>
+                            <source src="Videos/AD1_2.4G.mp4" type="video/mp4">
+                            Your browser does not support the video tag. Please download the video to view it: 
+                            <a href="Videos/AD1_2.4G.mp4">Download Video</a>
+                        </video>
+                    </div>
+                </div>
             </div>
-
-            
-            
             
         </div>
         
-        <h3>TX Boards at 900MHz</h3>
+        
+        
+        <h3>RX Boards at 900MHz</h3>
 
 
         
-        
-        <h2>2. True Diversity Boards</h2>
+        <h2 id="2-true-diversity-or-full-diversity-boards">2. True Diversity or Full Diversity Boards</h2>
         <h3>RX Boards at 2.4GHz</h3>
         <div class="module-group">
-            
+        
             <!-- Module 1 -->
             <div class="module">
                 <h3>TD1_2.4GHz</h3>
                 <p>Features: In this design, the receiver utilized two independent Semtech LoRa chips, each connected to its own antenna and operating on the same frequency. This configuration provided full diversity for the receiver, which improved signal reception and overall reliability.</p>
-                <video controls>
-                    <source src="Videos/TD1_2.4G.mp4" type="video/mp4">
-                    <!-- Fallback for older browsers -->
-                    Your browser does not support the video tag. Please download the video to view it: 
-                    <a href="Videos/TD1_2.4G.mp4">Download Video</a>
-                </video>
+                
+                <div class="media-container">
+                    <!-- Preview Image -->
+                    <div class="media-item">
+                        <img src="Images/TD1_2.4G.png" alt="Preview Image">
+                    </div>
+        
+                    <!-- Video -->
+                    <div class="media-item">
+                        <video controls>
+                            <source src="Videos/TD1_2.4G.mp4" type="video/mp4">
+                            Your browser does not support the video tag. Please download the video to view it: 
+                            <a href="Videos/TD1_2.4G.mp4">Download Video</a>
+                        </video>
+                    </div>
+                </div>
             </div>
-
             
             
             
         </div>
 
-        <h3>TX Boards at 900MHz</h3>
+        <h3>RX Boards at 900MHz</h3>
+
+        <h2> TX Boards (Shared for Single Antenna, Antenna Diversity & True Diversity)
+        </h2>
+        <div style="border-left: 4px solid #4CAF50; padding-left: 10px; margin: 10px 0; font-family: Arial, sans-serif;">
+            <strong>Note:</strong>  
+            <ul>
+              <li>The TX boards listed in this section are shared across <strong>Single Antenna Mode, Antenna Diversity, and True Diversity</strong> configurations.</li>
+              <li>These boards are <strong>not duplicated</strong> under each diversity category to avoid redundancy.</li>
+              <li>They are optimized for their respective frequencies (<strong>2.4GHz</strong> & <strong>900MHz</strong>) and ensure compatibility across all three configurations.</li>
+              <li><strong>Gemini Mode (GM) and Gemini Xrossband (GemX) have their own TX boards</strong>, so they are listed separately in their respective sections.</li>
+            </ul>
+          </div>
+          <h2>At 2.4GHz</h2>
+          <div class="module-group">
+              <!-- TX1 Module -->
+              <div class="module">
+                  <h3>TX1_2.4GHz</h3>
+                  <p>
+                      Features: The TX1 is a basic transmitter module without an OLED display or TX Backpack. 
+                      It is designed for users who need a simple and reliable ExpressLRS module at 2.4GHz 
+                      without additional functionalities like wireless communication with external devices.
+                  </p>
+                  
+                  <div class="media-container">
+                      <!-- Preview Image -->
+                      <div class="media-item">
+                          <img src="Images/TX1.png" alt="TX1 Preview Image">
+                      </div>
+          
+                      <!-- Video -->
+                      <div class="media-item">
+                          <video controls>
+                              <source src="Videos/TX1_2.4G.mp4" type="video/mp4">
+                              Your browser does not support the video tag. Please download the video to view it: 
+                              <a href="Videos/TX1_2.4G.mp4">Download Video</a>
+                          </video>
+                      </div>
+                  </div>
+              </div>
+          
+              <!-- TX2 Module -->
+              <div class="module">
+                  <h3>TX2_2.4GHz</h3>
+                  <p>
+                      Features: The TX2 features an integrated SSD1306 OLED display for on-screen telemetry 
+                      and configuration adjustments. However, it does not include a TX Backpack, meaning it 
+                      cannot wirelessly communicate with external devices like goggles, race timers, or GCS.
+                  </p>
+                  
+                  <div class="media-container">
+                      <!-- Preview Image -->
+                      <div class="media-item">
+                          <img src="Images/TX2.png" alt="TX2 Preview Image">
+                      </div>
+          
+                      <!-- Video -->
+                      <div class="media-item">
+                          <video controls>
+                              <source src="Videos/TX2_2.4G.mp4" type="video/mp4">
+                              Your browser does not support the video tag. Please download the video to view it: 
+                              <a href="Videos/TX2_2.4G.mp4">Download Video</a>
+                          </video>
+                      </div>
+                  </div>
+              </div>
+          
+              <!-- TX3 Module -->
+              <div class="module">
+                  <h3>TX3_2.4GHz</h3>
+                  <p>
+                      Features: The TX3 is the most advanced module in the series, featuring both an 
+                      SSD1306 OLED display and a TX Backpack. The TX Backpack allows seamless 
+                      communication with GCS, and 
+                      other external devices, making it ideal for users who require extended 
+                      connectivity options.
+                  </p>
+                  
+                  <div class="media-container">
+                      <!-- Preview Image -->
+                      <div class="media-item">
+                          <img src="Images/TX3.png" alt="TX3 Preview Image">
+                      </div>
+          
+                      <!-- Video -->
+                      <div class="media-item">
+                          <video controls>
+                              <source src="Videos/TX3_2.4G.mp4" type="video/mp4">
+                              Your browser does not support the video tag. Please download the video to view it: 
+                              <a href="Videos/TX3_2.4G.mp4">Download Video</a>
+                          </video>
+                      </div>
+                  </div>
+              </div>
+          </div>          
+        <h2>At 900MHz</h2>
 
         <h2>3. Gemini Mode Boards</h2>
-        <h3>RX Boards at 2.4GHz</h3>
+        <h3>RX Boards </h3>
+        <div style="border-left: 4px solid #4CAF50; padding-left: 10px; margin: 20px 0; font-family: Arial, sans-serif;">
+            <strong>Note:</strong>  
+            <ul>
+                <li>The <strong>Gemini RX boards</strong> are actually the <strong>True Diversity RX boards</strong> operating in <strong>Gemini Mode</strong>.</li>
+                <li>To enable <strong>Gemini Mode</strong>, set the <strong>RX Antenna Mode</strong> to <strong>Gemini</strong> via Lua script.</li>
+                <li><strong>Single Antenna RX boards</strong> can also operate in Gemini Mode but must use <strong>Model 5</strong> in <strong>Model Config Matching</strong> via Lua script.</li>
+                <li><strong>Gemini-capable receivers</strong> should use <strong>Model 6</strong> in <strong>Model Config Matching</strong>.</li>
+                <li>Click on 🔗 <a href="#2-true-diversity-or-full-diversity-boards">Go to True Diversity or Full Diversity RX Boards</a> to view compatible receivers.</li>
+            </ul>
+        </div>
+        
+        <div style="text-align:center;">
+            <p>📖 <strong>Reference:</strong> <a href="https://www.expresslrs.org/software/gemini/#what-is-gemini" target="_blank">ExpressLRS Gemini Mode Documentation</a></p>
+        </div>
+        
 
-        <h3>TX Boards at 900MHz</h3>
+    
+        <h3>TX Boards within 2.4GHz band</h3>
+        <h3>TX Boards within 900MHz band</h3>
 
         <h2>4. Gemini Xrossband (GemX) Boards</h2>
+        <h3>RX Boards</h3>
         
+        <h3>TX Boards</h3>
+
         <div class="badge-link">
             <a href="https://github.com/TeodoraMiu/UAV-TelemetryLink" target="_blank">Visit Full Documentation</a>
         </div>
@@ -82,5 +219,7 @@
     <footer>
         <p>&copy; 2025 FC Plus Sensor Module. All rights reserved.</p>
     </footer>
+
+    <script src="footer-toggle.js"></script>
 </body>
 </html>
