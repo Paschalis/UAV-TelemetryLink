@@ -14,7 +14,7 @@
     1. [Antenna Diversity Boards](#1-antenna-diversity-boards)
     - [RX Boards](#rx-boards)
     - [TX Boards](#tx-boards)
-    2. [True Diversity Boards](#2-true-diversity-boards)
+    2. [True Diversity or Full Diversity Boards](#2-true-diversity-or-full-diversity-boards)
     - [RX Boards](#rx-boards-1)
     - [TX Boards](#tx-boards-1)
     3. [Gemini Mode Boards](#3-gemini-mode-boards)
@@ -61,51 +61,63 @@ This repository contains a collection of designs for RX and TX boards under diff
 ## 1. Antenna Diversity Boards
 
 ### RX Boards
-| Name       | Features                          | Preview                                                       |
-|------------|-----------------------------------|------------------------------------------------------------|
-| AD1_2.4G   | Basic diversity setup    | [![Preview](Images/AD1_2.4G.gif)](https://github.com/TeodoraMiu/UAV-TelemetryLink/tree/main/Receivers%20and%20Transmitters/Antenna%20Diversity/RX/ExpressLRS_2.4GHz/AD1_2.4G)  <p align="center"> Click on the image to view the files </p>|
-| AD2_900M   |       | [![Preview](Images/AD2_900M.png)](https://github.com/your-repo/boards/AD2_900M)   |
+| Name        | Frequency | Features                        | Preview |
+|------------|----------|--------------------------------|---------|
+| AD1_2.4G | 2.4GHz   |Basic diversity setup    | [![Preview](Images/AD1_2.4G.gif)](https://github.com/TeodoraMiu/UAV-TelemetryLink/tree/main/Receivers%20and%20Transmitters/Antenna%20Diversity/RX/ExpressLRS_2.4GHz/AD1_2.4G)  <p align="center"> Click on the image to view the files </p>|
+| AD2_900M  | 900MHz   | | ![Preview](Images/AD2_900M.png) |
 
-### TX Boards
-| Name       | Features                          | Preview                                                       |
-|------------|-----------------------------------|------------------------------------------------------------|
-| AD_TX1_2.4G| Optimized for transmission at 2.4GHz | [![Preview](Images/AD_TX1_2.4G.png)](https://github.com/your-repo/boards/AD_TX1_2.4G)   |
-
-## 2. True Diversity Boards
+## 2. True Diversity or Full Diversity Boards
 
 ### RX Boards
-| Name        | Features                          | Preview                                                       |
-|-------------|-----------------------------------|------------------------------------------------------------|
-| TD1_2.4G    | Full diversity with improved range | [![Preview](Images/TD1_2.4G.gif)](https://github.com/TeodoraMiu/UAV-TelemetryLink/tree/main/Receivers%20and%20Transmitters/True%20Antenna%20Diversity/ExpressLRS_2.4GHz/TD1_2.4G)  <p align="center"> Click on the image to view the files </p> |
+| Name        | Frequency | Features                        | Preview |
+|------------|----------|--------------------------------|---------|
+| TD1_2.4G | 2.4GHz   | Full diversity with improved range | [![Preview](Images/TD1_2.4G.gif)](https://github.com/TeodoraMiu/UAV-TelemetryLink/tree/main/Receivers%20and%20Transmitters/True%20Antenna%20Diversity/ExpressLRS_2.4GHz/TD1_2.4G)  <p align="center"> Click on the image to view the files </p> |
+| TD2_900M  | 900MHz   | | ![Preview](Images/TD2_900M.png) |
 
-### TX Boards
-| Name        | Features                          | Preview                                                       |
-|-------------|-----------------------------------|------------------------------------------------------------|
-| TD_TX1_900M | Robust transmitter for 900MHz      | [![Preview](Images/TD_TX1_900M.png)](https://github.com/your-repo/boards/TD_TX1_900M)   |
+## TX Boards (Shared for Single Antenna, Antenna Diversity & True Diversity)
 
-## 3. Gemini Mode Boards
+> **Note:**  
+> The TX boards listed in this section are shared across **Single Antenna Mode, Antenna Diversity, and True Diversity** configurations.  
+> - These boards are **not duplicated** under each diversity category to avoid redundancy.  
+> - They are optimized for their respective frequencies (**2.4GHz** & **900MHz**) and ensure compatibility across all three configurations.  
+> - **Gemini Mode (GM) and Gemini Xrossband (GemX) have their own TX boards**, so they are listed separately in their respective sections.  
 
-### RX Boards
-| Name         | Features                          | Preview                                                       |
-|--------------|-----------------------------------|------------------------------------------------------------|
-| GM1_2.4G     | Dual-frequency within 2.4GHz band | [![Preview](Images/GM1_2.4G.png)](https://github.com/your-repo/boards/GM1_2.4G)   |
+| Name        | Frequency | Features                        | Preview |
+|------------|----------|--------------------------------|---------|
+| TX1_2.4G | 2.4GHz   | Optimized for transmission    | ![Preview](Images/TX1_2.4G.png) |
+| TX1_900M | 900MHz   | Robust transmitter for 900MHz | ![Preview](Images/TX1_900M.png) |
 
-### TX Boards
-| Name         | Features                          | Preview                                                       |
-|--------------|-----------------------------------|------------------------------------------------------------|
-| GM_TX1_900M  | Dual-frequency within 900MHz band  | [![Preview](Images/GM_TX1_900M.png)](https://github.com/your-repo/boards/GM_TX1_900M)   |
-
-## 4. Gemini Xrossband (GemX) Boards
+## 3. Gemini Mode Boards  
 
 ### RX Boards
-| Name         | Features                          | Preview                                                       |
-|--------------|-----------------------------------|------------------------------------------------------------|
-| GX1          | Crossband receiver for 2.4GHz and 900MHz | [![Preview](Images/GX1.png)](https://github.com/your-repo/boards/GX1)   |
+> **Note:**  
+> - The **Gemini RX boards** are actually the **True Diversity RX boards** operating in **Gemini Mode**.  
+> - To enable **Gemini Mode**, set the **RX Antenna Mode** to **Gemini** via Lua script.  
+> - **Single Antenna RX boards** can also operate in Gemini Mode but must use **Model 5** in **Model Config Matching** via Lua script.  
+> - **Gemini-capable receivers** should use **Model 6** in **Model Config Matching**.  
+> - Click on [🔗 **Go to True Diversity Full Diversity RX Boards**](#2-true-diversity-or-full-diversity-boards) to view compatible receivers.  
+>  
+> 📖 **Reference:** [ExpressLRS Gemini Mode Documentation](https://www.expresslrs.org/software/gemini/#what-is-gemini)  
 
-### TX Boards
-| Name         | Features                          | Preview                                                       |
-|--------------|-----------------------------------|------------------------------------------------------------|
-| GX_TX1       | Crossband transmitter for 2.4GHz and 900MHz | [![Preview](Images/GX_TX1.png)](https://github.com/your-repo/boards/GX_TX1)   |
+### TX Boards  
+| Name      | Frequency | Features                                                                 | Preview |
+|----------|----------|---------------------------------------------------------------------------|---------|
+| TX1_2.4G | 2.4GHz   | Basic transmitter with no OLED display or TX Backpack.                  | [![Preview](Images/TX1.png)](https://github.com/your-repo/boards/TX1_2.4G) |
+| TX2_2.4G | 2.4GHz   | Includes SSD1306 OLED display, but no TX Backpack.        | [![Preview](Images/TX2.png)](https://github.com/your-repo/boards/TX2_2.4G) |
+| TX3_2.4G | 2.4GHz   | Features both SSD1306 OLED display and TX Backpack for GCS communication. | [![Preview](Images/TX3.png)](https://github.com/your-repo/boards/TX3_2.4G) |
+
+## 4. Gemini Xrossband (GemX) Boards  
+
+### RX Boards  
+| Name  | Frequency            | Features                                | Preview                                                       |
+|-------|----------------------|-----------------------------------------|------------------------------------------------------------|
+| GX1   | 2.4GHz & 900MHz      | Crossband receiver for 2.4GHz and 900MHz | [![Preview](Images/GX1.png)](https://github.com/your-repo/boards/GX1) |
+
+### TX Boards  
+| Name   | Frequency            | Features                                      | Preview                                                       |
+|--------|----------------------|----------------------------------------------|------------------------------------------------------------|
+| GX_TX1 | 2.4GHz & 900MHz      | Crossband transmitter for 2.4GHz and 900MHz | [![Preview](Images/GX_TX1.png)](https://github.com/your-repo/boards/GX_TX1) |
+
 
 ## Contributing
 
