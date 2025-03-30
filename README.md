@@ -45,8 +45,16 @@ Below is an example of the hardware setup for mission planning:
 - **Onboard Setup**: ELRS receiver mounted on the UAV and connected to the flight controller.
 
 ![Hardware Setup](Images/Hardware_Setup.png)
+
+> **Note:**  
+> - More details about the transmission modes can be found in the [Transmission Modes Classification](Receivers%20and%20Transmitters/README.md).
+>
+>![Modes Info](Receivers%20and%20Transmitters/Images/diversity.png)
+
 > **Note:**  
 > - ELRS requires proper binding and configuration to function as a telemetry link.
+
+![GCS](Images/GCS.png)
 
 ## Related Projects
 
@@ -95,9 +103,11 @@ This repository contains a collection of designs for RX and TX boards under diff
 > - They are optimized for their respective frequencies (**2.4GHz** & **900MHz**) and ensure compatibility across all three configurations.  
 > - **Gemini Mode (GM) and Gemini Xrossband (GemX) have their own TX boards**, so they are listed separately in their respective sections.  
 
-| Name        | Frequency | Features                        | Preview |
-|------------|----------|--------------------------------|---------|
-| TX1_2.4G | 2.4GHz   | Optimized for transmission    | ![Preview](Images/TX1_2.4G.png) |
+| Name      | Frequency | Features                                                                 | Preview |
+|----------|----------|---------------------------------------------------------------------------|---------|
+| TX1_2.4G | 2.4GHz   | Basic transmitter with no OLED display or TX Backpack.                  | [![Preview](Images/TX1.png)](https://github.com/your-repo/boards/TX1_2.4G) |
+| TX2_2.4G | 2.4GHz   | Includes SSD1306 OLED display, but no TX Backpack.        | [![Preview](Images/TX2.png)](https://github.com/your-repo/boards/TX2_2.4G) |
+| TX3_2.4G | 2.4GHz   | Features both SSD1306 OLED display and TX Backpack for GCS communication. | [![Preview](Images/TX3.png)](https://github.com/your-repo/boards/TX3_2.4G) |
 | TX1_900M | 900MHz   | Robust transmitter for 900MHz | ![Preview](Images/TX1_900M.png) |
 
 ## 3. Gemini Mode Boards  
@@ -113,11 +123,11 @@ This repository contains a collection of designs for RX and TX boards under diff
 > 📖 **Reference:** [ExpressLRS Gemini Mode Documentation](https://www.expresslrs.org/software/gemini/#what-is-gemini)  
 
 ### TX Boards  
-| Name      | Frequency | Features                                                                 | Preview |
-|----------|----------|---------------------------------------------------------------------------|---------|
-| TX1_2.4G | 2.4GHz   | Basic transmitter with no OLED display or TX Backpack.                  | [![Preview](Images/TX1.png)](https://github.com/your-repo/boards/TX1_2.4G) |
-| TX2_2.4G | 2.4GHz   | Includes SSD1306 OLED display, but no TX Backpack.        | [![Preview](Images/TX2.png)](https://github.com/your-repo/boards/TX2_2.4G) |
-| TX3_2.4G | 2.4GHz   | Features both SSD1306 OLED display and TX Backpack for GCS communication. | [![Preview](Images/TX3.png)](https://github.com/your-repo/boards/TX3_2.4G) |
+| Name   | Frequency            | Features                                      | Preview                                                       |
+|--------|----------------------|----------------------------------------------|------------------------------------------------------------|
+| G_TX1 | 2.4GHz     | Transmitter for 2.4GHz  | [![Preview](Images/GX_TX1.png)](https://github.com/your-repo/boards/GX_TX1) |
+| G_TX2 | 900MHz      | Transmitter for 900MHz | [![Preview](Images/GX_TX1.png)](https://github.com/your-repo/boards/GX_TX1) |
+
 
 ## 4. Gemini Xrossband (GemX) Boards  
 
