@@ -36,4 +36,4 @@ True Diversity or Full Diversity
 | U8                | ESP32-PICO-D4       | [Datasheet](https://www.espressif.com/sites/default/files/documentation/esp32-pico-d4_datasheet_en.pdf) | Package_DFN_QFN:QFN-48-1EP_7x7mm_P0.5mm_EP5.1x5.1mm_ThermalVias | 1  |  |
 | Y1, Y2           | 52MHz               | ~            | Crystal:Crystal_SMD_2016-4Pin_2.0x1.6mm | 2  |  |
 
-[⬅️ Go Back to Main README](https://github.com/TeodoraMiu/UAV-TelemetryLink)
+[⬅️ Go Back to Main README](https://github.com/Paschalis/UAV-TelemetryLink)

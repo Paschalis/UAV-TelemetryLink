@@ -42,4 +42,4 @@ Antenna Diversity
 | Y1          | 52MHz           | ~            | Crystal:Crystal_SMD_2016-4Pin_2.0x1.6mm | 1 |      |
 | Y2          | 26MHz           | ~            | Crystal:Crystal_SMD_2016-4Pin_2.0x1.6mm | 1 |      |
 
-[⬅️ Go Back to Main README](https://github.com/TeodoraMiu/UAV-TelemetryLink)
+[⬅️ Go Back to Main README](https://github.com/Paschalis/UAV-TelemetryLink)

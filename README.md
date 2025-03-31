@@ -74,7 +74,7 @@ Explore more about the **FC Plus Sensor Module** and its integration into UAV sy
 This repository contains a collection of designs for RX and TX boards under different transmission modes. More details about the transmission modes can be found in the [Transmission Modes Classification](Receivers%20and%20Transmitters/README.md).
 
 <p align="center">
-    <a href="https://TeodoraMiu.github.io/UAV-TelemetryLink/" target="_blank">
+    <a href="https://Paschalis.github.io/UAV-TelemetryLink/" target="_blank">
         <img src="https://img.shields.io/badge/Visit_UAV_Telemetry_Link_Site-4C8F9F?style=for-the-badge&logo=github&logoColor=white&color=4C8F9F" alt="Visit UAV Telemetry Link Site">
     </a>
 </p>
@@ -84,7 +84,7 @@ This repository contains a collection of designs for RX and TX boards under diff
 ### RX Boards
 | Name        | Frequency | Features                        | Preview |
 |------------|----------|--------------------------------|---------|
-| AD1_2.4G | 2.4GHz   |Basic diversity setup    | [![Preview](Images/AD1_2.4G.gif)](https://github.com/TeodoraMiu/UAV-TelemetryLink/tree/main/Receivers%20and%20Transmitters/Receivers/Antenna%20Diversity/RX/ExpressLRS_2.4GHz/AD1_2.4G)  <p align="center"> Click on the image to view the files </p>|
+| AD1_2.4G | 2.4GHz   |Basic diversity setup    | [![Preview](Images/AD1_2.4G.gif)](https://github.com/Paschalis/UAV-TelemetryLink/tree/main/Receivers%20and%20Transmitters/Receivers/Antenna%20Diversity/RX/ExpressLRS_2.4GHz/AD1_2.4G)  <p align="center"> Click on the image to view the files </p>|
 | AD2_900M  | 900MHz   | | ![Preview](Images/AD2_900M.png) |
 
 ## 2. True Diversity or Full Diversity Boards
@@ -92,7 +92,7 @@ This repository contains a collection of designs for RX and TX boards under diff
 ### RX Boards
 | Name        | Frequency | Features                        | Preview |
 |------------|----------|--------------------------------|---------|
-| TD1_2.4G | 2.4GHz   | Full diversity with improved range | [![Preview](Images/TD1_2.4G.gif)](https://github.com/TeodoraMiu/UAV-TelemetryLink/tree/main/Receivers%20and%20Transmitters/Receivers/True%20Antenna%20Diversity/ExpressLRS_2.4GHz/TD1_2.4G)  <p align="center"> Click on the image to view the files </p> |
+| TD1_2.4G | 2.4GHz   | Full diversity with improved range | [![Preview](Images/TD1_2.4G.gif)](https://github.com/Paschalis/UAV-TelemetryLink/tree/main/Receivers%20and%20Transmitters/Receivers/True%20Antenna%20Diversity/ExpressLRS_2.4GHz/TD1_2.4G)  <p align="center"> Click on the image to view the files </p> |
 | TD2_900M  | 900MHz   | | ![Preview](Images/TD2_900M.png) |
 
 ## TX Boards (Shared for Single Antenna, Antenna Diversity & True Diversity)
@@ -105,9 +105,9 @@ This repository contains a collection of designs for RX and TX boards under diff
 
 | Name      | Frequency | Features                                                                 | Preview |
 |----------|----------|---------------------------------------------------------------------------|---------|
-| TX1_2.4G | 2.4GHz   | Basic transmitter with no OLED display or TX Backpack.                  | [![Preview](docs/Images/TX1_2.4G.png)](https://github.com/TeodoraMiu/UAV-TelemetryLink/tree/main/Receivers%20and%20Transmitters/Transmitters/Shared%20for%20Single%20Antenna%2C%20Antenna%20Diversity%2C%20True%20or%20Full%20Diversity/ExpressLRS_2.4GHz/TX1_2.4G)  <p align="center"> Click on the image to view the files </p> |
-| TX2_2.4G | 2.4GHz   | Includes SSD1306 OLED display, but no TX Backpack.        | [![Preview](docs/Images/TX2_2.4G.png)](https://github.com/TeodoraMiu/UAV-TelemetryLink/tree/main/Receivers%20and%20Transmitters/Transmitters/Shared%20for%20Single%20Antenna%2C%20Antenna%20Diversity%2C%20True%20or%20Full%20Diversity/ExpressLRS_2.4GHz/TX2_2.4G)  <p align="center"> Click on the image to view the files </p> |
-| TX3_2.4G | 2.4GHz   | Features both SSD1306 OLED display and TX Backpack for GCS communication. | [![Preview](Images/TX3.png)](https://github.com/your-repo/boards/TX3_2.4G) |
+| TX1_2.4G | 2.4GHz   | Basic transmitter with no OLED display or TX Backpack.                  | [![Preview](docs/Images/TX1_2.4G.png)](https://github.com/Paschalis/UAV-TelemetryLink/tree/main/Receivers%20and%20Transmitters/Transmitters/Shared%20for%20Single%20Antenna%2C%20Antenna%20Diversity%2C%20True%20or%20Full%20Diversity/ExpressLRS_2.4GHz/TX1_2.4G)  <p align="center"> Click on the image to view the files </p> |
+| TX2_2.4G | 2.4GHz   | Includes SSD1306 OLED display, but no TX Backpack.        | [![Preview](docs/Images/TX2_2.4G.png)](https://github.com/Paschalis/UAV-TelemetryLink/tree/main/Receivers%20and%20Transmitters/Transmitters/Shared%20for%20Single%20Antenna%2C%20Antenna%20Diversity%2C%20True%20or%20Full%20Diversity/ExpressLRS_2.4GHz/TX2_2.4G)  <p align="center"> Click on the image to view the files </p> |
+| TX3_2.4G | 2.4GHz   | Features both SSD1306 OLED display and TX Backpack for GCS communication. | [![Preview](docs/Images/TX3.png)](https://github.com/your-repo/boards/TX3_2.4G) |
 | TX1_900M | 900MHz   | Robust transmitter for 900MHz | ![Preview](Images/TX1_900M.png) |
 
 ## 3. Gemini Mode Boards  
