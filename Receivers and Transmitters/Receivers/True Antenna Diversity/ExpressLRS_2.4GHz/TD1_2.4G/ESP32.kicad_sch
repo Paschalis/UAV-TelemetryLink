@@ -8,7 +8,7 @@
 		(title "ESP32-PICO-D4")
 		(date "2025-02-23")
 		(rev "1.0")
-		(company "https://github.com/Paschalis | TeodoraMiu")
+		(company "https://github.com/Paschalis")
 	)
 	(lib_symbols
 		(symbol "Device:C_Small"
@@ -4083,7 +4083,7 @@
 		(lib_id "Jumper:Jumper_2_Small_Bridged")
 		(at 187.96 64.77 270)
 		(unit 1)
-		(exclude_from_sim yes)
+		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)

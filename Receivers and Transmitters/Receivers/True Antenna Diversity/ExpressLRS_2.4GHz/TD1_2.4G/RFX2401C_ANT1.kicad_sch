@@ -8,7 +8,7 @@
 		(title "RFX2401C: 2.4 GHz ZIGBEE / ISM FRONT-END MODULE")
 		(date "2025-02-23")
 		(rev "1.0")
-		(company "https://github.com/Paschalis | TeodoraMiu")
+		(company "https://github.com/Paschalis")
 	)
 	(lib_symbols
 		(symbol "2450LP14B100:2450LP14B100"

@@ -8,7 +8,7 @@
 		(title "SX1280")
 		(date "2025-02-23")
 		(rev "1.0")
-		(company "https://github.com/Paschalis | TeodoraMiu")
+		(company "https://github.com/Paschalis")
 		(comment 2 "capabilities in LoRa communication, making it ideal for reliable telemetry.")
 		(comment 3 "The SX1280 is used for its long-range, low-power, and high-performance ")
 	)
