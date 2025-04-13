@@ -3394,10 +3394,6 @@
 		(uuid "9962d1e2-4c0b-4d85-8469-f576e7ee2cfa")
 	)
 	(no_connect
-		(at 157.48 57.15)
-		(uuid "b83600c1-862f-419e-ab3b-12ce33e9515a")
-	)
-	(no_connect
 		(at 127 74.93)
 		(uuid "b869341e-dd86-4385-b305-67e6db746ec4")
 	)
@@ -4137,6 +4133,16 @@
 	)
 	(wire
 		(pts
+			(xy 157.48 57.15) (xy 161.29 57.15)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "eadbaf06-fe45-4443-aa00-7054223d375f")
+	)
+	(wire
+		(pts
 			(xy 86.36 55.88) (xy 86.36 57.15)
 		)
 		(stroke
@@ -4265,6 +4271,16 @@
 		)
 		(uuid "4c860659-aeca-41e9-96c2-2882aad451b5")
 	)
+	(label "LED_RGB"
+		(at 161.29 57.15 0)
+		(effects
+			(font
+				(size 1 1)
+			)
+			(justify left bottom)
+		)
+		(uuid "5ed0b39a-f916-4c55-ab25-0a07cb3f0fd7")
+	)
 	(label "BUSY"
 		(at 243.84 63.5 0)
 		(effects
@@ -4355,7 +4371,7 @@
 		)
 		(uuid "8eab8be0-58f9-4591-bfdb-5bac85dcd9a9")
 	)
-	(label "SPORT"
+	(label "LED_RGB"
 		(at 207.01 142.24 180)
 		(effects
 			(font

@@ -3838,10 +3838,6 @@
 		(uuid "9962d1e2-4c0b-4d85-8469-f576e7ee2cfa")
 	)
 	(no_connect
-		(at 119.38 58.42)
-		(uuid "b83600c1-862f-419e-ab3b-12ce33e9515a")
-	)
-	(no_connect
 		(at 88.9 76.2)
 		(uuid "b869341e-dd86-4385-b305-67e6db746ec4")
 	)
@@ -4038,6 +4034,16 @@
 			(type default)
 		)
 		(uuid "33f9e2bf-2d05-4f82-b232-f627193d981e")
+	)
+	(wire
+		(pts
+			(xy 119.38 58.42) (xy 123.19 58.42)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "37403295-e1b7-4b62-a296-d046ccc20dab")
 	)
 	(wire
 		(pts
@@ -4919,6 +4925,16 @@
 		)
 		(uuid "5f620079-c2c6-429d-93c6-13bdf8e6b5a9")
 	)
+	(label "LED_RGB"
+		(at 123.19 58.42 0)
+		(effects
+			(font
+				(size 1 1)
+			)
+			(justify left bottom)
+		)
+		(uuid "617cd5d4-02ec-43b5-bbf6-5d36a1916c80")
+	)
 	(label "DIO2"
 		(at 123.19 40.64 0)
 		(effects
@@ -5009,7 +5025,7 @@
 		)
 		(uuid "8eab8be0-58f9-4591-bfdb-5bac85dcd9a9")
 	)
-	(label "SPORT"
+	(label "LED_RGB"
 		(at 207.01 142.24 180)
 		(effects
 			(font
