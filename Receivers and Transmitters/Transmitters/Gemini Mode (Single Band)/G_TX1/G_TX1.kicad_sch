@@ -8708,7 +8708,7 @@
 			)
 		)
 		(instances
-			(project "pcb2blender_tmp"
+			(project "G_TX1"
 				(path "/32640adb-d3ae-4079-8814-1903180e0e12"
 					(page "2")
 				)

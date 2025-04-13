@@ -125,8 +125,8 @@ This repository contains a collection of designs for RX and TX boards under diff
 ### TX Boards  
 | Name   | Frequency            | Features                                      | Preview                                                       |
 |--------|----------------------|----------------------------------------------|------------------------------------------------------------|
-| G_TX1 | 2.4GHz     | Transmitter for 2.4GHz  | [![Preview](Images/GX_TX1.png)](https://github.com/your-repo/boards/GX_TX1) |
-| G_TX2 | 900MHz      | Transmitter for 900MHz | [![Preview](Images/GX_TX1.png)](https://github.com/your-repo/boards/GX_TX1) |
+| G_TX1_2.4G | 2.4GHz     | The transmitter sends packets on two frequencies within the same band, spaced approximately 40 MHz apart for 2.4 GHz.  | [![Preview](docs/Images/G_TX1_2.4G.png)](https://github.com/Paschalis/UAV-TelemetryLink/tree/main/Receivers%20and%20Transmitters/Transmitters/Gemini%20Mode(Single%20Band)/G_TX1)  <p align="center"> Click on the image to view the files </p> |
+| G_TX1_900M | 900MHz      | The transmitter sends packets on two frequencies within the same band, spaced approximately 10 MHz apart for 900MHz. | [![Preview](docs/Images/GX_TX1_900M.png)](https://github.com/your-repo/boards/GX_TX1) |
 
 
 ## 4. Gemini Xrossband (GemX) Boards  
