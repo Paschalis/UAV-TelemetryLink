@@ -71,6 +71,12 @@ This classification illustrates the progression from basic single antenna setups
 
 Understanding these modes enables the selection of appropriate communication systems tailored to specific drone operation requirements, ensuring robust and efficient wireless links.
 
+## Mounting and Enclosure Options
+
+For practical deployment of the transmission systems described above, especially those involving Moxon or omnidirectional antennas operating at 2.4 GHz and 900 MHz, refer to the [TX_Enclosures_RC_Mounts](/Receivers%20and%20Transmitters/Transmitters/TX_Enclosures_RC_Mounts/) folder.
+
+This directory contains 3D-printable enclosures and RC controller mounting designs for various transmitter boards. These mounts are optimized for signal performance, mechanical stability, and operator ergonomics across all transmission modes, from single antenna to Gemini Xrossband setups.
+
 ---
 
 ## References
