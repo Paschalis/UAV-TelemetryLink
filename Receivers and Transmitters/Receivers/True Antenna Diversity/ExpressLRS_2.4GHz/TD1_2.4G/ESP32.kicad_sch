@@ -428,7 +428,7 @@
 			)
 			(embedded_fonts no)
 		)
-		(symbol "LED:WS2812B"
+		(symbol "LED:WS2812B-2020"
 			(pin_names
 				(offset 0.254)
 			)
@@ -444,7 +444,7 @@
 					(justify right bottom)
 				)
 			)
-			(property "Value" "WS2812B"
+			(property "Value" "WS2812B-2020"
 				(at 1.27 -5.715 0)
 				(effects
 					(font
@@ -453,7 +453,7 @@
 					(justify left top)
 				)
 			)
-			(property "Footprint" "LED_SMD:LED_WS2812B_PLCC4_5.0x5.0mm_P3.2mm"
+			(property "Footprint" "LED_SMD:LED_WS2812B-2020_PLCC4_2.0x2.0mm"
 				(at 1.27 -7.62 0)
 				(effects
 					(font
@@ -463,7 +463,7 @@
 					(hide yes)
 				)
 			)
-			(property "Datasheet" "https://cdn-shop.adafruit.com/datasheets/WS2812B.pdf"
+			(property "Datasheet" "https://cdn-shop.adafruit.com/product-files/4684/4684_WS2812B-2020_V1.3_EN.pdf"
 				(at 2.54 -9.525 0)
 				(effects
 					(font
@@ -473,7 +473,7 @@
 					(hide yes)
 				)
 			)
-			(property "Description" "RGB LED with integrated controller"
+			(property "Description" "RGB LED with integrated controller, 2.0 x 2.0 mm, 12 mA"
 				(at 0 0 0)
 				(effects
 					(font
@@ -482,7 +482,7 @@
 					(hide yes)
 				)
 			)
-			(property "ki_keywords" "RGB LED NeoPixel addressable"
+			(property "ki_keywords" "RGB LED NeoPixel Nano addressable"
 				(at 0 0 0)
 				(effects
 					(font
@@ -491,7 +491,7 @@
 					(hide yes)
 				)
 			)
-			(property "ki_fp_filters" "LED*WS2812*PLCC*5.0x5.0mm*P3.2mm*"
+			(property "ki_fp_filters" "LED*WS2812*-2020_PLCC4*"
 				(at 0 0 0)
 				(effects
 					(font
@@ -500,7 +500,7 @@
 					(hide yes)
 				)
 			)
-			(symbol "WS2812B_0_0"
+			(symbol "WS2812B-2020_0_0"
 				(text "RGB"
 					(at 2.286 -4.191 0)
 					(effects
@@ -510,7 +510,7 @@
 					)
 				)
 			)
-			(symbol "WS2812B_0_1"
+			(symbol "WS2812B-2020_0_1"
 				(polyline
 					(pts
 						(xy 1.27 -2.54) (xy 1.778 -2.54)
@@ -607,7 +607,7 @@
 					)
 				)
 			)
-			(symbol "WS2812B_1_1"
+			(symbol "WS2812B-2020_1_1"
 				(pin input line
 					(at -7.62 0 0)
 					(length 2.54)
@@ -618,7 +618,7 @@
 							)
 						)
 					)
-					(number "4"
+					(number "3"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -636,7 +636,7 @@
 							)
 						)
 					)
-					(number "1"
+					(number "4"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -654,7 +654,7 @@
 							)
 						)
 					)
-					(number "3"
+					(number "2"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -672,7 +672,7 @@
 							)
 						)
 					)
-					(number "2"
+					(number "1"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -1658,43 +1658,44 @@
 		)
 		(symbol "W3008:W3008"
 			(pin_names
-				(offset 0.254)
+				(offset 1.016)
 			)
 			(exclude_from_sim no)
 			(in_bom yes)
 			(on_board yes)
-			(property "Reference" "AE"
-				(at 2.2606 6.985 0)
+			(property "Reference" "ANT"
+				(at -2.5422 5.7198 0)
 				(effects
 					(font
-						(size 1.524 1.524)
+						(size 1.27 1.27)
 					)
+					(justify left bottom)
 				)
 			)
 			(property "Value" "W3008"
-				(at 2.2606 3.175 0)
+				(at -2.5445 -8.9059 0)
 				(effects
 					(font
-						(size 1.524 1.524)
+						(size 1.27 1.27)
 					)
+					(justify left bottom)
 				)
 			)
-			(property "Footprint" "ANT_W3008_PUL"
+			(property "Footprint" "W3008:ANTENNA_W3008"
 				(at 0 0 0)
 				(effects
 					(font
 						(size 1.27 1.27)
-						(italic yes)
 					)
+					(justify bottom)
 					(hide yes)
 				)
 			)
-			(property "Datasheet" "W3008"
+			(property "Datasheet" ""
 				(at 0 0 0)
 				(effects
 					(font
 						(size 1.27 1.27)
-						(italic yes)
 					)
 					(hide yes)
 				)
@@ -1708,39 +1709,113 @@
 					(hide yes)
 				)
 			)
-			(property "ki_locked" ""
+			(property "MF" "PulseLarsen Antennas"
 				(at 0 0 0)
 				(effects
 					(font
 						(size 1.27 1.27)
 					)
-				)
-			)
-			(property "ki_keywords" "W3008"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
+					(justify bottom)
 					(hide yes)
 				)
 			)
-			(property "ki_fp_filters" "ANT_W3008_PUL ANT_W3008_PUL-M ANT_W3008_PUL-L"
+			(property "Description_1" "2.4GHz Bluetooth, WLAN, Zigbee™ Chip RF Antenna 2.4GHz ~ 2.483GHz 2.2dBi Solder Surface Mount"
 				(at 0 0 0)
 				(effects
 					(font
 						(size 1.27 1.27)
 					)
+					(justify bottom)
 					(hide yes)
 				)
 			)
-			(symbol "W3008_0_1"
+			(property "Package" "None"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify bottom)
+					(hide yes)
+				)
+			)
+			(property "Price" "None"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify bottom)
+					(hide yes)
+				)
+			)
+			(property "Check_prices" "https://www.snapeda.com/parts/W3008/PulseLarsen+Antennas/view-part/?ref=eda"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify bottom)
+					(hide yes)
+				)
+			)
+			(property "STANDARD" "Manufacturer recommendations"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify bottom)
+					(hide yes)
+				)
+			)
+			(property "SnapEDA_Link" "https://www.snapeda.com/parts/W3008/PulseLarsen+Antennas/view-part/?ref=snap"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify bottom)
+					(hide yes)
+				)
+			)
+			(property "MP" "W3008"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify bottom)
+					(hide yes)
+				)
+			)
+			(property "Availability" "Not in stock"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify bottom)
+					(hide yes)
+				)
+			)
+			(property "MANUFACTURER" "PulseLarsen Antennas"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify bottom)
+					(hide yes)
+				)
+			)
+			(symbol "W3008_0_0"
 				(polyline
 					(pts
-						(xy -2.54 10.16) (xy 0 7.62)
+						(xy -2.54 5.08) (xy 0 5.08)
 					)
 					(stroke
-						(width 0.2032)
+						(width 0.1524)
 						(type default)
 					)
 					(fill
@@ -1749,10 +1824,10 @@
 				)
 				(polyline
 					(pts
-						(xy 0 10.16) (xy 0 7.62)
+						(xy -2.54 5.08) (xy 0 2.54)
 					)
 					(stroke
-						(width 0.2032)
+						(width 0.1524)
 						(type default)
 					)
 					(fill
@@ -1761,10 +1836,10 @@
 				)
 				(polyline
 					(pts
-						(xy 0 7.62) (xy 0 2.54)
+						(xy 0 5.08) (xy 0 2.54)
 					)
 					(stroke
-						(width 0.2032)
+						(width 0.1524)
 						(type default)
 					)
 					(fill
@@ -1773,30 +1848,90 @@
 				)
 				(polyline
 					(pts
-						(xy 0 7.62) (xy 2.54 10.16)
+						(xy 0 5.08) (xy 2.54 5.08)
 					)
 					(stroke
-						(width 0.2032)
+						(width 0.1524)
 						(type default)
 					)
 					(fill
 						(type none)
 					)
 				)
-				(pin unspecified line
-					(at 0 0 90)
-					(length 2.54)
-					(name "1"
+				(polyline
+					(pts
+						(xy 0 2.54) (xy 2.54 5.08)
+					)
+					(stroke
+						(width 0.1524)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 0 0) (xy 5.08 0)
+					)
+					(stroke
+						(width 0.1524)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(pin passive line
+					(at 0 -2.54 90)
+					(length 5.08)
+					(name "~"
 						(effects
 							(font
-								(size 1.27 1.27)
+								(size 1.016 1.016)
 							)
 						)
 					)
-					(number "1"
+					(number "FEED"
 						(effects
 							(font
-								(size 1.27 1.27)
+								(size 1.016 1.016)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 5.08 -2.54 90)
+					(length 2.54)
+					(name "~"
+						(effects
+							(font
+								(size 1.016 1.016)
+							)
+						)
+					)
+					(number "G1"
+						(effects
+							(font
+								(size 1.016 1.016)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 5.08 -2.54 90)
+					(length 2.54)
+					(name "~"
+						(effects
+							(font
+								(size 1.016 1.016)
+							)
+						)
+					)
+					(number "G2"
+						(effects
+							(font
+								(size 1.016 1.016)
 							)
 						)
 					)
@@ -1908,131 +2043,6 @@
 				)
 			)
 			(symbol "+3.3V_1_1"
-				(pin power_in line
-					(at 0 0 90)
-					(length 0)
-					(name "~"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "1"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-			)
-			(embedded_fonts no)
-		)
-		(symbol "power:+5V"
-			(power)
-			(pin_numbers
-				(hide yes)
-			)
-			(pin_names
-				(offset 0)
-				(hide yes)
-			)
-			(exclude_from_sim no)
-			(in_bom yes)
-			(on_board yes)
-			(property "Reference" "#PWR"
-				(at 0 -3.81 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "Value" "+5V"
-				(at 0 3.556 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Footprint" ""
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "Datasheet" ""
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "Description" "Power symbol creates a global label with name \"+5V\""
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "ki_keywords" "global power"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(symbol "+5V_0_1"
-				(polyline
-					(pts
-						(xy -0.762 1.27) (xy 0 2.54)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 0 2.54) (xy 0.762 1.27)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 0 0) (xy 0 2.54)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-			)
-			(symbol "+5V_1_1"
 				(pin power_in line
 					(at 0 0 90)
 					(length 0)
@@ -2186,6 +2196,12 @@
 		(uuid "3e82b47b-f5d1-4742-ba5a-d1e41fb506ea")
 	)
 	(junction
+		(at 127 35.56)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "4b7c7d15-3c0d-4ce3-9e0d-5aa7eb8a6078")
+	)
+	(junction
 		(at 88.9 57.15)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -2202,6 +2218,18 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "aed8ddee-88fc-4939-899a-413751cfd871")
+	)
+	(junction
+		(at 135.89 35.56)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "b6f2e82a-68d4-4761-91a0-2b2ca1fb4ebd")
+	)
+	(junction
+		(at 177.8 43.18)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "d61249fd-91c7-4c4d-bbe9-116da8b0ca5d")
 	)
 	(junction
 		(at 146.05 46.99)
@@ -2310,6 +2338,16 @@
 			(type default)
 		)
 		(uuid "08d1c24f-d133-4b7c-8b91-fb2bf2330b48")
+	)
+	(wire
+		(pts
+			(xy 127 35.56) (xy 135.89 35.56)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "0a15a823-5187-4635-b6bd-acc2cfc243f1")
 	)
 	(wire
 		(pts
@@ -2443,6 +2481,16 @@
 	)
 	(wire
 		(pts
+			(xy 170.18 43.18) (xy 177.8 43.18)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "3ca57d26-5bd8-4ed6-b9ba-bf5cdfe4bdf8")
+	)
+	(wire
+		(pts
 			(xy 91.44 60.96) (xy 88.9 60.96)
 		)
 		(stroke
@@ -2483,16 +2531,6 @@
 	)
 	(wire
 		(pts
-			(xy 166.37 53.34) (xy 170.18 53.34)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "4d3c4f37-a7f8-4948-b18f-ce3f7978ec4d")
-	)
-	(wire
-		(pts
 			(xy 144.78 31.75) (xy 144.78 35.56)
 		)
 		(stroke
@@ -2500,6 +2538,26 @@
 			(type default)
 		)
 		(uuid "4e5aba5e-1460-4f95-83ad-5a6e3c297404")
+	)
+	(wire
+		(pts
+			(xy 170.18 53.34) (xy 170.18 43.18)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "515accdb-6367-4994-a45b-f5c6e3afd2b0")
+	)
+	(wire
+		(pts
+			(xy 135.89 35.56) (xy 135.89 36.83)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "6204b944-6a90-454c-8bf1-c6e18f2313ce")
 	)
 	(wire
 		(pts
@@ -2533,6 +2591,16 @@
 	)
 	(wire
 		(pts
+			(xy 166.37 53.34) (xy 170.18 53.34)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "7e038fb7-1727-4c8e-9132-17a30c437076")
+	)
+	(wire
+		(pts
 			(xy 144.78 35.56) (xy 144.78 46.99)
 		)
 		(stroke
@@ -2560,6 +2628,16 @@
 			(type default)
 		)
 		(uuid "84a7e48a-d82f-4644-9a48-905788126788")
+	)
+	(wire
+		(pts
+			(xy 127 41.91) (xy 127 43.18)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "87396528-4bf6-4b67-890b-8e91363398c7")
 	)
 	(wire
 		(pts
@@ -2593,7 +2671,7 @@
 	)
 	(wire
 		(pts
-			(xy 132.08 41.91) (xy 132.08 43.18)
+			(xy 118.11 41.91) (xy 118.11 43.18)
 		)
 		(stroke
 			(width 0)
@@ -2633,6 +2711,16 @@
 	)
 	(wire
 		(pts
+			(xy 177.8 50.8) (xy 177.8 52.07)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "a2e9d2ed-7bc3-49ed-b9fc-439af3394de6")
+	)
+	(wire
+		(pts
 			(xy 190.5 104.14) (xy 190.5 106.68)
 		)
 		(stroke
@@ -2663,7 +2751,7 @@
 	)
 	(wire
 		(pts
-			(xy 132.08 35.56) (xy 144.78 35.56)
+			(xy 118.11 35.56) (xy 127 35.56)
 		)
 		(stroke
 			(width 0)
@@ -2703,6 +2791,16 @@
 	)
 	(wire
 		(pts
+			(xy 135.89 41.91) (xy 135.89 43.18)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "bcced439-0680-4361-b03e-a9be6a0b1efd")
+	)
+	(wire
+		(pts
 			(xy 166.37 66.04) (xy 170.18 66.04)
 		)
 		(stroke
@@ -2713,7 +2811,17 @@
 	)
 	(wire
 		(pts
-			(xy 132.08 36.83) (xy 132.08 35.56)
+			(xy 177.8 43.18) (xy 177.8 40.64)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "cd4d8d07-4649-4549-8cd4-5b1ebc90ebe6")
+	)
+	(wire
+		(pts
+			(xy 118.11 36.83) (xy 118.11 35.56)
 		)
 		(stroke
 			(width 0)
@@ -2763,6 +2871,16 @@
 	)
 	(wire
 		(pts
+			(xy 135.89 35.56) (xy 144.78 35.56)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "e6705cae-3bb1-4566-9ae4-0aa8a9694958")
+	)
+	(wire
+		(pts
 			(xy 166.37 114.3) (xy 170.18 114.3)
 		)
 		(stroke
@@ -2770,6 +2888,16 @@
 			(type default)
 		)
 		(uuid "e7b00b2f-0d2c-46f1-a4ab-fb63f03fcdc3")
+	)
+	(wire
+		(pts
+			(xy 182.88 40.64) (xy 182.88 41.91)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "eca92149-a1e8-4f02-8e35-a45321a71b97")
 	)
 	(wire
 		(pts
@@ -2820,6 +2948,48 @@
 			(type default)
 		)
 		(uuid "fa1077dd-d4b4-420f-b7fc-e7c09fc8d1b7")
+	)
+	(wire
+		(pts
+			(xy 177.8 43.18) (xy 177.8 45.72)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "fabd21e3-93db-4638-872f-aac46877bc2f")
+	)
+	(wire
+		(pts
+			(xy 127 35.56) (xy 127 36.83)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "fd98b50f-a9c7-45bd-93f7-e0e9ba1da790")
+	)
+	(global_label "F2"
+		(shape input)
+		(at 190.5 86.36 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "ded6bc79-f1ed-439a-b063-b55872481351")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 195.7833 86.36 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
 	)
 	(hierarchical_label "TXEN_1"
 		(shape output)
@@ -2999,7 +3169,7 @@
 	)
 	(symbol
 		(lib_id "Device:C_Small")
-		(at 132.08 39.37 0)
+		(at 118.11 39.37 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -3007,7 +3177,7 @@
 		(dnp no)
 		(uuid "0196a506-9da5-4fa6-b9c7-ec53e0089dee")
 		(property "Reference" "C22"
-			(at 134.112 38.608 0)
+			(at 120.142 38.608 0)
 			(effects
 				(font
 					(size 1 1)
@@ -3016,7 +3186,7 @@
 			)
 		)
 		(property "Value" "100nF"
-			(at 133.858 40.132 0)
+			(at 119.888 40.132 0)
 			(effects
 				(font
 					(size 1 1)
@@ -3025,7 +3195,7 @@
 			)
 		)
 		(property "Footprint" "Capacitor_SMD:C_0603_1608Metric_Pad1.08x0.95mm_HandSolder"
-			(at 132.08 39.37 0)
+			(at 118.11 39.37 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3034,7 +3204,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 132.08 39.37 0)
+			(at 118.11 39.37 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3043,7 +3213,7 @@
 			)
 		)
 		(property "Description" "Unpolarized capacitor, small symbol"
-			(at 132.08 39.37 0)
+			(at 118.11 39.37 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3474,6 +3644,205 @@
 		)
 	)
 	(symbol
+		(lib_id "Device:C_Small")
+		(at 177.8 48.26 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "3a4df57d-2c84-4457-b1da-0f935c286ac7")
+		(property "Reference" "C33"
+			(at 171.958 47.498 0)
+			(effects
+				(font
+					(size 1 1)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "1.5pF"
+			(at 171.704 49.276 0)
+			(effects
+				(font
+					(size 1 1)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Capacitor_SMD:C_01005_0402Metric_Pad0.57x0.30mm_HandSolder"
+			(at 177.8 48.26 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 177.8 48.26 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Unpolarized capacitor, small symbol"
+			(at 177.8 48.26 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "325eeb39-64ea-43da-9228-1f19227ab323")
+		)
+		(pin "1"
+			(uuid "28bf8f10-ba43-4a1e-8542-2076b65d0634")
+		)
+		(instances
+			(project "TD1_2.4G"
+				(path "/519a6343-94c5-45ee-b578-f72c6307b81f/54622858-c2f3-4165-ac58-bb54af11c678"
+					(reference "C33")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GND")
+		(at 177.8 52.07 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "3efdd507-51fc-4db3-bf57-48fc171591f5")
+		(property "Reference" "#PWR015"
+			(at 177.8 58.42 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "GND"
+			(at 177.8 55.626 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 177.8 52.07 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 177.8 52.07 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 177.8 52.07 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "4eb2ca46-5480-4b0b-a629-04a46a5ea6fd")
+		)
+		(instances
+			(project "TD1_2.4G"
+				(path "/519a6343-94c5-45ee-b578-f72c6307b81f/54622858-c2f3-4165-ac58-bb54af11c678"
+					(reference "#PWR015")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GND")
+		(at 127 43.18 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "4edb6644-a5c3-454f-b23d-2cbc5ba4c7c0")
+		(property "Reference" "#PWR012"
+			(at 127 49.53 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "GND"
+			(at 127 47.244 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 127 43.18 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 127 43.18 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 127 43.18 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "bf89e775-5de3-4a1b-aba5-a319e67692e7")
+		)
+		(instances
+			(project "TD1_2.4G"
+				(path "/519a6343-94c5-45ee-b578-f72c6307b81f/54622858-c2f3-4165-ac58-bb54af11c678"
+					(reference "#PWR012")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "power:GND")
 		(at 187.96 72.39 0)
 		(unit 1)
@@ -3604,6 +3973,245 @@
 		)
 	)
 	(symbol
+		(lib_id "W3008:W3008")
+		(at 177.8 38.1 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "5342a203-ec22-438c-bc7b-7a4a3b214e83")
+		(property "Reference" "ANT3"
+			(at 184.15 34.2899 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "W3008"
+			(at 184.15 36.8299 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "W3008:ANTENNA_W3008"
+			(at 177.8 38.1 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify bottom)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 177.8 38.1 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 177.8 38.1 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MF" "PulseLarsen Antennas"
+			(at 177.8 38.1 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify bottom)
+				(hide yes)
+			)
+		)
+		(property "Description_1" "2.4GHz Bluetooth, WLAN, Zigbee™ Chip RF Antenna 2.4GHz ~ 2.483GHz 2.2dBi Solder Surface Mount"
+			(at 177.8 38.1 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify bottom)
+				(hide yes)
+			)
+		)
+		(property "Package" "None"
+			(at 177.8 38.1 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify bottom)
+				(hide yes)
+			)
+		)
+		(property "Price" "None"
+			(at 177.8 38.1 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify bottom)
+				(hide yes)
+			)
+		)
+		(property "Check_prices" "https://www.snapeda.com/parts/W3008/PulseLarsen+Antennas/view-part/?ref=eda"
+			(at 177.8 38.1 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify bottom)
+				(hide yes)
+			)
+		)
+		(property "STANDARD" "Manufacturer recommendations"
+			(at 177.8 38.1 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify bottom)
+				(hide yes)
+			)
+		)
+		(property "SnapEDA_Link" "https://www.snapeda.com/parts/W3008/PulseLarsen+Antennas/view-part/?ref=snap"
+			(at 177.8 38.1 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify bottom)
+				(hide yes)
+			)
+		)
+		(property "MP" "W3008"
+			(at 177.8 38.1 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify bottom)
+				(hide yes)
+			)
+		)
+		(property "Availability" "Not in stock"
+			(at 177.8 38.1 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify bottom)
+				(hide yes)
+			)
+		)
+		(property "MANUFACTURER" "PulseLarsen Antennas"
+			(at 177.8 38.1 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify bottom)
+				(hide yes)
+			)
+		)
+		(pin "G2"
+			(uuid "4c3e9b8b-2796-4fb8-bc08-84ccc3cf86b8")
+		)
+		(pin "FEED"
+			(uuid "de2e91b2-5c21-446e-aca4-b999315f34a5")
+		)
+		(pin "G1"
+			(uuid "b20f92ac-5863-488e-99c2-0a3af5f055eb")
+		)
+		(instances
+			(project ""
+				(path "/519a6343-94c5-45ee-b578-f72c6307b81f/54622858-c2f3-4165-ac58-bb54af11c678"
+					(reference "ANT3")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GND")
+		(at 182.88 41.91 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "53a5fb7f-c679-4d85-8033-fd73252fbf18")
+		(property "Reference" "#PWR068"
+			(at 182.88 48.26 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "GND"
+			(at 182.88 45.974 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 182.88 41.91 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 182.88 41.91 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 182.88 41.91 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "b1b006b6-ce3b-450e-a35c-a5b587f695ed")
+		)
+		(instances
+			(project "TD1_2.4G"
+				(path "/519a6343-94c5-45ee-b578-f72c6307b81f/54622858-c2f3-4165-ac58-bb54af11c678"
+					(reference "#PWR068")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "Device:C_Small")
 		(at 156.21 39.37 180)
 		(unit 1)
@@ -3673,69 +4281,76 @@
 		)
 	)
 	(symbol
-		(lib_id "W3008:W3008")
-		(at 170.18 53.34 0)
+		(lib_id "LED:WS2812B-2020")
+		(at 190.5 96.52 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
 		(fields_autoplaced yes)
-		(uuid "69a8ecc0-f4a9-4cef-acef-88e657df88aa")
-		(property "Reference" "AE1"
-			(at 173.99 45.7199 0)
-			(effects
-				(font
-					(size 1.524 1.524)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "W3008"
-			(at 173.99 48.2599 0)
-			(effects
-				(font
-					(size 1.524 1.524)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" "W3008:ANT_W3008_PUL"
-			(at 170.18 53.34 0)
+		(uuid "6a87c31d-daab-4ed8-9334-63e6ef09b353")
+		(property "Reference" "D1"
+			(at 204.47 90.0998 0)
 			(effects
 				(font
 					(size 1.27 1.27)
-					(italic yes)
 				)
-				(hide yes)
 			)
 		)
-		(property "Datasheet" "W3008"
-			(at 170.18 53.34 0)
+		(property "Value" "WS2812B-2020"
+			(at 204.47 92.6398 0)
 			(effects
 				(font
 					(size 1.27 1.27)
-					(italic yes)
 				)
+			)
+		)
+		(property "Footprint" "LED_SMD:LED_WS2812B-2020_PLCC4_2.0x2.0mm"
+			(at 191.77 104.14 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
 				(hide yes)
 			)
 		)
-		(property "Description" ""
-			(at 170.18 53.34 0)
+		(property "Datasheet" "https://cdn-shop.adafruit.com/product-files/4684/4684_WS2812B-2020_V1.3_EN.pdf"
+			(at 193.04 106.045 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(property "Description" "RGB LED with integrated controller, 2.0 x 2.0 mm, 12 mA"
+			(at 190.5 96.52 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(hide yes)
 			)
+		)
+		(pin "3"
+			(uuid "080197c4-4367-489c-8aa7-5afbde25926d")
+		)
+		(pin "2"
+			(uuid "968e45fd-dffd-41aa-afa1-0541a8b9d9cc")
 		)
 		(pin "1"
-			(uuid "39626aab-081f-4633-937c-1c7b6a7e37be")
+			(uuid "c8314f2a-6599-4d87-af01-bbd68778e23d")
+		)
+		(pin "4"
+			(uuid "e1fa4720-a459-40b6-b358-fb747a64d63a")
 		)
 		(instances
-			(project ""
+			(project "TD1_2.4G"
 				(path "/519a6343-94c5-45ee-b578-f72c6307b81f/54622858-c2f3-4165-ac58-bb54af11c678"
-					(reference "AE1")
+					(reference "D1")
 					(unit 1)
 				)
 			)
@@ -3816,7 +4431,7 @@
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
-		(on_board yes)
+		(on_board no)
 		(dnp no)
 		(uuid "7431b25c-340a-4d18-ab8a-9b7660b52058")
 		(property "Reference" "C21"
@@ -3948,8 +4563,77 @@
 		)
 	)
 	(symbol
+		(lib_id "Device:C_Small")
+		(at 127 39.37 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "7506825c-130c-47b5-8087-deee7f87a0fe")
+		(property "Reference" "C24"
+			(at 129.032 38.608 0)
+			(effects
+				(font
+					(size 1 1)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "100nF"
+			(at 128.778 40.132 0)
+			(effects
+				(font
+					(size 1 1)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Capacitor_SMD:C_0603_1608Metric_Pad1.08x0.95mm_HandSolder"
+			(at 127 39.37 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 127 39.37 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Unpolarized capacitor, small symbol"
+			(at 127 39.37 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "b2390d50-629e-4a39-84ae-43820642f45f")
+		)
+		(pin "1"
+			(uuid "17015088-94b8-4848-879e-d36a867e1f11")
+		)
+		(instances
+			(project "TD1_2.4G"
+				(path "/519a6343-94c5-45ee-b578-f72c6307b81f/54622858-c2f3-4165-ac58-bb54af11c678"
+					(reference "C24")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "power:GND")
-		(at 132.08 43.18 0)
+		(at 118.11 43.18 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -3957,7 +4641,7 @@
 		(dnp no)
 		(uuid "7bec111b-fd16-4452-b543-a9cfa0c6af61")
 		(property "Reference" "#PWR75"
-			(at 132.08 49.53 0)
+			(at 118.11 49.53 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3966,7 +4650,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 132.08 47.244 0)
+			(at 118.11 47.244 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3974,7 +4658,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 132.08 43.18 0)
+			(at 118.11 43.18 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3983,7 +4667,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 132.08 43.18 0)
+			(at 118.11 43.18 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3992,7 +4676,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 132.08 43.18 0)
+			(at 118.11 43.18 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4107,7 +4791,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "TestPoint:TestPoint_2Pads_Pitch2.54mm_Drill0.8mm"
+		(property "Footprint" "TestPoint:TestPoint_Bridge_Pitch2.0mm_Drill0.7mm"
 			(at 187.96 64.77 0)
 			(effects
 				(font
@@ -4144,82 +4828,6 @@
 			(project ""
 				(path "/519a6343-94c5-45ee-b578-f72c6307b81f/54622858-c2f3-4165-ac58-bb54af11c678"
 					(reference "JP1")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "LED:WS2812B")
-		(at 190.5 96.52 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "a4ba1eb0-3eff-417b-a166-79826968e2a0")
-		(property "Reference" "D1"
-			(at 201.93 90.2014 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "WS2812B"
-			(at 201.93 92.7414 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" "LED_SMD:LED_WS2812B_PLCC4_5.0x5.0mm_P3.2mm"
-			(at 191.77 104.14 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left top)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "https://cdn-shop.adafruit.com/datasheets/WS2812B.pdf"
-			(at 193.04 106.045 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left top)
-				(hide yes)
-			)
-		)
-		(property "Description" "RGB LED with integrated controller"
-			(at 190.5 96.52 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "03b7f5a6-4e00-4bd2-b502-14c60ab93e9a")
-		)
-		(pin "3"
-			(uuid "e0191182-480c-41bb-bffe-025445604ebc")
-		)
-		(pin "2"
-			(uuid "1010cb7d-b572-419c-8031-431958e9fd72")
-		)
-		(pin "4"
-			(uuid "2ee36774-7148-4815-8abd-2627ac6dfa76")
-		)
-		(instances
-			(project ""
-				(path "/519a6343-94c5-45ee-b578-f72c6307b81f/54622858-c2f3-4165-ac58-bb54af11c678"
-					(reference "D1")
 					(unit 1)
 				)
 			)
@@ -4292,16 +4900,16 @@
 		)
 	)
 	(symbol
-		(lib_id "power:+5V")
-		(at 190.5 86.36 0)
+		(lib_id "power:GND")
+		(at 135.89 43.18 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
-		(uuid "b5bfb309-d283-4224-89ad-52f1f52b7737")
-		(property "Reference" "#PWR68"
-			(at 190.5 90.17 0)
+		(uuid "b9b9c0a0-1635-49e2-9643-0dd918f7d501")
+		(property "Reference" "#PWR078"
+			(at 135.89 49.53 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4309,17 +4917,16 @@
 				(hide yes)
 			)
 		)
-		(property "Value" "+5V"
-			(at 188.468 82.55 0)
+		(property "Value" "GND"
+			(at 135.89 47.244 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(justify left)
 			)
 		)
 		(property "Footprint" ""
-			(at 190.5 86.36 0)
+			(at 135.89 43.18 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4328,7 +4935,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 190.5 86.36 0)
+			(at 135.89 43.18 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4336,8 +4943,8 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "Power symbol creates a global label with name \"+5V\""
-			(at 190.5 86.36 0)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 135.89 43.18 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4346,12 +4953,12 @@
 			)
 		)
 		(pin "1"
-			(uuid "6edd207c-f396-4224-91c4-02e45ae94170")
+			(uuid "f9c43abc-710a-41b6-8cee-16edc19e66b6")
 		)
 		(instances
 			(project "TD1_2.4G"
 				(path "/519a6343-94c5-45ee-b578-f72c6307b81f/54622858-c2f3-4165-ac58-bb54af11c678"
-					(reference "#PWR68")
+					(reference "#PWR078")
 					(unit 1)
 				)
 			)
@@ -4417,6 +5024,75 @@
 			(project "TD1_2.4G"
 				(path "/519a6343-94c5-45ee-b578-f72c6307b81f/54622858-c2f3-4165-ac58-bb54af11c678"
 					(reference "#PWR71")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:C_Small")
+		(at 135.89 39.37 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "e4db9be5-755b-4c9c-9895-cf266544d4e2")
+		(property "Reference" "C25"
+			(at 137.922 38.608 0)
+			(effects
+				(font
+					(size 1 1)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "100nF"
+			(at 137.668 40.132 0)
+			(effects
+				(font
+					(size 1 1)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Capacitor_SMD:C_0603_1608Metric_Pad1.08x0.95mm_HandSolder"
+			(at 135.89 39.37 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 135.89 39.37 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Unpolarized capacitor, small symbol"
+			(at 135.89 39.37 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "90da0cca-8da1-4a59-8617-72925e97b5c0")
+		)
+		(pin "1"
+			(uuid "c8179729-1d12-400e-ab81-636d2827e635")
+		)
+		(instances
+			(project "TD1_2.4G"
+				(path "/519a6343-94c5-45ee-b578-f72c6307b81f/54622858-c2f3-4165-ac58-bb54af11c678"
+					(reference "C25")
 					(unit 1)
 				)
 			)

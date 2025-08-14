@@ -9,6 +9,9 @@
 		(date "2025-02-23")
 		(rev "1.0")
 		(company "https://github.com/Paschalis")
+		(comment 1 "LoRa telemetry.")
+		(comment 2 "switch. Enhances transmit power and receive sensitivity for long-range ")
+		(comment 3 "RFX2401C 2.4 GHz RF front-end module with integrated PA/LNA and T/R ")
 	)
 	(lib_symbols
 		(symbol "2450LP14B100:2450LP14B100"

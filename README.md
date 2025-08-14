@@ -56,44 +56,75 @@ Below is an example of the hardware setup for mission planning:
 
 ![GCS](Images/GCS.png)
 
-## Related Projects
+## Related Projects (click on them to expand)
 
-**FC Plus Sensor Module** is a modular add-on board for UAV flight controllers, offering advanced features such as telemetry, GPS, object avoidance (ToF, Sonar, IR), and LED indicators for status feedback. This repository includes comprehensive documentation, hardware setup instructions, sensor integration guides, and communication protocols (LoRa/WiFi) to improve UAV autonomy, safety, and performance.
+<!-- <p align="center"><em>(click on them to expand)</em></p> -->
+
+<ol style="line-height: 2;">
+   <li><details open>
+   <summary><strong>ESP32 UAV Telemetry Monitor</strong></summary>
+
+An ESP32-based telemetry display system for real-time MAVLink UAV monitoring, featuring a responsive touchscreen interface, live flight status visualization, OTA firmware update capability, and seamless integration with QGroundControl, MAVProxy, and other MAVLink-compatible ground stations.
+<div align="center">
+
+<img src="Images/preview2.png" alt="MonitorPreview" width="650">
+
+[![ESP32 UAV Telemetry Monitor](https://img.shields.io/badge/📡%20ESP32--UAV--Telemetry--Monitor-Visit%20Now!-orange?style=for-the-badge)](https://github.com/Paschalis/esp32-uav-telemetry-monitor)  
+[![Stars](https://img.shields.io/github/stars/Paschalis/esp32-uav-telemetry-monitor?label=🌟%20Stars&style=for-the-badge&color=yellow)](https://github.com/Paschalis/esp32-uav-telemetry-monitor/stargazers) [![Forks](https://img.shields.io/github/forks/Paschalis/esp32-uav-telemetry-monitor?label=🍴%20Forks&style=for-the-badge&color=blue)](https://github.com/Paschalis/esp32-uav-telemetry-monitor/network/members) [![Activity](https://img.shields.io/github/last-commit/Paschalis/esp32-uav-telemetry-monitor?label=⏳%20Last%20Update&style=for-the-badge&color=green)](https://github.com/Paschalis/esp32-uav-telemetry-monitor/commits/main)
+
+</div>
+
+
+   </details></li>
+   <li><details>
+   <summary><strong>FC Plus Sensor Module</strong></summary>
+
+![Under Construction](https://img.shields.io/badge/status-under%20construction-orange)
+FC Plus Sensor Module is a modular add-on board for UAV flight controllers, offering advanced features such as telemetry, GPS, object avoidance (ToF, Sonar, IR), and LED indicators for status feedback. This repository includes comprehensive documentation, hardware setup instructions, sensor integration guides, and communication protocols (LoRa/WiFi) to improve UAV autonomy, safety, and performance.
 
 <div align="center">
 
+<img src="Images/preview1.png" alt="FCreview" width="750">
 
+![Under Construction](https://img.shields.io/badge/status-under%20construction-orange)
 [![FC Plus Sensor Module](https://img.shields.io/badge/📡%20FC--Plus--Sensor--Module-Visit%20Now!-orange?style=for-the-badge)](https://github.com/Paschalis/fc-plus-sensor-module)              
 [![Stars](https://img.shields.io/github/stars/Paschalis/fc-plus-sensor-module?label=🌟%20Stars&style=for-the-badge&color=yellow)](https://github.com/Paschalis/fc-plus-sensor-module/stargazers) [![Forks](https://img.shields.io/github/forks/Paschalis/fc-plus-sensor-module?label=🍴%20Forks&style=for-the-badge&color=blue)](https://github.com/Paschalis/fc-plus-sensor-module/network/members) [![Activity](https://img.shields.io/github/last-commit/Paschalis/fc-plus-sensor-module?label=⏳%20Last%20Update&style=for-the-badge&color=green)](https://github.com/Paschalis/fc-plus-sensor-module/commits/main)
 
 </div>
 
-Explore more about the **FC Plus Sensor Module** and its integration into UAV systems by clicking on the badge above to access the full documentation and setup guide.
+
+</ol>
+
+
 # Board Designs Overview
 
 This repository contains a collection of designs for RX and TX boards under different transmission modes. More details about the transmission modes can be found in the [Transmission Modes Classification](Receivers%20and%20Transmitters/README.md).
 
 <p align="center">
     <a href="https://Paschalis.github.io/UAV-TelemetryLink/" target="_blank">
-        <img src="https://img.shields.io/badge/Visit_UAV_Telemetry_Link_Site-4C8F9F?style=for-the-badge&logo=github&logoColor=white&color=4C8F9F" alt="Visit UAV Telemetry Link Site">
+        <img src="https://img.shields.io/badge/Visit_UAV_Telemetry_Link_Site-4C8F9F?style=for-the-badge&logo=github&logoColor=white&color=4C8F9F" alt="Visit UAV Telemetry Link Site" width="350">
     </a>
 </p>
 
 ## 1. Antenna Diversity Boards
 
 ### RX Boards
-| Name        | Frequency | Features                        | Preview |
-|------------|----------|--------------------------------|---------|
-| AD1_2.4G | 2.4GHz   |Basic diversity setup    | [![Preview](Images/AD1_2.4G.gif)](https://github.com/Paschalis/UAV-TelemetryLink/tree/main/Receivers%20and%20Transmitters/Receivers/Antenna%20Diversity/RX/ExpressLRS_2.4GHz/AD1_2.4G)  <p align="center"> Click on the image to view the files </p>|
-| AD2_900M  | 900MHz   | | ![Preview](Images/AD2_900M.png) |
+#### ELRS
+| Name      | Frequency | Version | Features             | Preview                                                                                                                                                                                                                              | Tools | Status |
+|-----------|-----------|---------|----------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|-------|--------|
+| AD1_2.4G  | 2.4GHz    | Rev 1.0 | Basic diversity setup | [![Preview](Images/AD1_2.4G.gif)](https://github.com/Paschalis/UAV-TelemetryLink/tree/main/Receivers%20and%20Transmitters/Receivers/Antenna%20Diversity/ExpressLRS_2.4GHz/AD1_2.4G)<br/><sub><p align="center">Click on the image to view the files</p></sub> | <p align="center"><a href="https://github.com/Paschalis/UAV-TelemetryLink/blob/main/Receivers%20and%20Transmitters/Receivers/Antenna%20Diversity/ExpressLRS_2.4GHz/AD1_2.4G/bom/ibom.html" title="Open iBOM"><img src="https://camo.githubusercontent.com/bc5c83fb1cac5664c9e3bec8b7156b34375e57d408f5e6c0be80c819796e657b/68747470733a2f2f692e696d6775722e636f6d2f6a73346b444f6e2e706e67" width="50"/></a> <a href="https://kicanvas.org/?github=https%3A%2F%2Fgithub.com%2FPaschalis%2FUAV-TelemetryLink%2Ftree%2Fmain%2FReceivers%2520and%2520Transmitters%2FReceivers%2FAntenna%2520Diversity%2FExpressLRS_2.4GHz%2FAD1_2.4G" title="Open KiCanvas"><img src="https://kicanvas.org/images/kicanvas.png" width="50"/></a></p> | <p align="center">✅ Approved </p> |
+| AD2_900M  | 900MHz    |  | (Add description)      | ![Preview](Images/AD2_900M.png)                                                                                                                                                                                                      | *(Add links)* |  <p align="center"> Draft </p> |
+
 
 ## 2. True Diversity or Full Diversity Boards
 
 ### RX Boards
-| Name        | Frequency | Features                        | Preview |
-|------------|----------|--------------------------------|---------|
-| TD1_2.4G | 2.4GHz   | Full diversity with improved range | [![Preview](Images/TD1_2.4G.gif)](https://github.com/Paschalis/UAV-TelemetryLink/tree/main/Receivers%20and%20Transmitters/Receivers/True%20Antenna%20Diversity/ExpressLRS_2.4GHz/TD1_2.4G)  <p align="center"> Click on the image to view the files </p> |
-| TD2_900M  | 900MHz   | | ![Preview](Images/TD2_900M.png) |
+
+| Name      | Frequency | Version | Features                   | Preview                                                                                                                                                                                                                                 | Tools | Status |
+|-----------|-----------|---------|----------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|-------|--------|
+| TD1_2.4G  | 2.4GHz    | Rev 1.0 | Full diversity with improved range | [![Preview](Images/TD1_2.4G.gif)](https://github.com/Paschalis/UAV-TelemetryLink/tree/main/Receivers%20and%20Transmitters/Receivers/True%20Antenna%20Diversity/ExpressLRS_2.4GHz/TD1_2.4G)<br/><sub><p align="center">Click on the image to view the files</p></sub> | <p align="center"><a href="https://github.com/Paschalis/UAV-TelemetryLink/blob/main/Receivers%20and%20Transmitters/Receivers/True%20Antenna%20Diversity/ExpressLRS_2.4GHz/TD1_2.4G/bom/ibom.html" title="Open iBOM"><img src="https://camo.githubusercontent.com/bc5c83fb1cac5664c9e3bec8b7156b34375e57d408f5e6c0be80c819796e657b/68747470733a2f2f692e696d6775722e636f6d2f6a73346b444f6e2e706e67" width="50"/></a> <a href="https://kicanvas.org/?github=https%3A%2F%2Fgithub.com%2FPaschalis%2FUAV-TelemetryLink%2Ftree%2Fmain%2FReceivers%2520and%2520Transmitters%2FReceivers%2FTrue%2520Antenna%2520Diversity%2FExpressLRS_2.4GHz%2FTD1_2.4G" title="Open KiCanvas"><img src="https://kicanvas.org/images/kicanvas.png" width="50"/></a></p> | <p align="center">✅ Approved </p>  |
+| TD2_900M  | 900MHz    | Rev 0.9 | (Add description)           | ![Preview](Images/TD2_900M.png)                                                                                                                                                                                                         | *(Add links)* |  <p align="center"> Draft </p> |
+
 
 ## TX Boards (Shared for Single Antenna, Antenna Diversity & True Diversity)
 
@@ -103,12 +134,15 @@ This repository contains a collection of designs for RX and TX boards under diff
 > - They are optimized for their respective frequencies (**2.4GHz** & **900MHz**) and ensure compatibility across all three configurations.  
 > - **Gemini Mode (GM) and Gemini Xrossband (GemX) have their own TX boards**, so they are listed separately in their respective sections.  
 
-| Name      | Frequency | Features                                                                 | Preview |
-|----------|----------|---------------------------------------------------------------------------|---------|
-| TX1_2.4G | 2.4GHz   | Basic transmitter with no OLED display or TX Backpack.                  | [![Preview](docs/Images/TX1_2.4G.png)](https://github.com/Paschalis/UAV-TelemetryLink/tree/main/Receivers%20and%20Transmitters/Transmitters/Shared%20for%20Single%20Antenna%2C%20Antenna%20Diversity%2C%20True%20or%20Full%20Diversity/ExpressLRS_2.4GHz/TX1_2.4G)  <p align="center"> Click on the image to view the files </p> |
-| TX2_2.4G | 2.4GHz   | Includes SSD1306 OLED display, but no TX Backpack.        | [![Preview](docs/Images/TX2_2.4G.png)](https://github.com/Paschalis/UAV-TelemetryLink/tree/main/Receivers%20and%20Transmitters/Transmitters/Shared%20for%20Single%20Antenna%2C%20Antenna%20Diversity%2C%20True%20or%20Full%20Diversity/ExpressLRS_2.4GHz/TX2_2.4G)  <p align="center"> Click on the image to view the files </p> |
-| TX3_2.4G | 2.4GHz   | Features both SSD1306 OLED display and TX Backpack for GCS communication. | [![Preview](docs/Images/TX3.png)](https://github.com/Paschalis/UAV-TelemetryLink/tree/main/Receivers%20and%20Transmitters/Transmitters/Shared%20for%20Single%20Antenna%2C%20Antenna%20Diversity%2C%20True%20or%20Full%20Diversity/ExpressLRS_2.4GHz/TX3_2.4G)  <p align="center"> Click on the image to view the files </p>  |
-| TX1_900M | 900MHz   | Robust transmitter for 900MHz | ![Preview](Images/TX1_900M.png) |
+### TX Boards  
+
+| Name      | Frequency | Version | Features                                                                 | Preview | View | Status |
+|-----------|-----------|---------|--------------------------------------------------------------------------|---------|--------|--------|
+| TX1_2.4G  | 2.4GHz    | Rev 1.0 | Basic transmitter with no OLED display or TX Backpack.                   | [![Preview](docs/Images/TX1_2.4G.png)](https://github.com/Paschalis/UAV-TelemetryLink/tree/main/Receivers%20and%20Transmitters/Transmitters/Shared%20for%20Single%20Antenna%2C%20Antenna%20Diversity%2C%20True%20or%20Full%20Diversity/ExpressLRS_2.4GHz/TX1_2.4G)<br/><sub><p align="center">Click on the image to view the files</p></sub> | <p align="center"><a href="https://github.com/Paschalis/UAV-TelemetryLink/blob/main/Receivers%20and%20Transmitters/Transmitters/Shared%20for%20Single%20Antenna%2C%20Antenna%20Diversity%2C%20True%20or%20Full%20Diversity/ExpressLRS_2.4GHz/TX1_2.4G/bom/ibom.html" title="Open iBOM"><img src="https://camo.githubusercontent.com/bc5c83fb1cac5664c9e3bec8b7156b34375e57d408f5e6c0be80c819796e657b/68747470733a2f2f692e696d6775722e636f6d2f6a73346b444f6e2e706e67" width="50"/></a> <a href="https://kicanvas.org/?github=https%3A%2F%2Fgithub.com%2FPaschalis%2FUAV-TelemetryLink%2Ftree%2Fmain%2FReceivers%2520and%2520Transmitters%2FTransmitters%2FShared%2520for%2520Single%2520Antenna%252C%2520Antenna%2520Diversity%252C%2520True%2520or%2520Full%2520Diversity%2FExpressLRS_2.4GHz%2FTX1_2.4G" title="Open KiCanvas"><img src="https://kicanvas.org/images/kicanvas.png" width="50"/></a></p> | <p align="center">✅ Approved </p>  |
+| TX2_2.4G  | 2.4GHz    | Rev 1.1 | Includes SSD1306 OLED display, but no TX Backpack.                       | [![Preview](docs/Images/TX2_2.4G.png)](https://github.com/Paschalis/UAV-TelemetryLink/tree/main/Receivers%20and%20Transmitters/Transmitters/Shared%20for%20Single%20Antenna%2C%20Antenna%20Diversity%2C%20True%20or%20Full%20Diversity/ExpressLRS_2.4GHz/TX2_2.4G)<br/><sub><p align="center">Click on the image to view the files</p></sub> | <p align="center"><a href="https://github.com/Paschalis/UAV-TelemetryLink/blob/main/Receivers%20and%20Transmitters/Transmitters/Shared%20for%20Single%20Antenna%2C%20Antenna%20Diversity%2C%20True%20or%20Full%20Diversity/ExpressLRS_2.4GHz/TX2_2.4G/bom/ibom.html" title="Open iBOM"><img src="https://camo.githubusercontent.com/bc5c83fb1cac5664c9e3bec8b7156b34375e57d408f5e6c0be80c819796e657b/68747470733a2f2f692e696d6775722e636f6d2f6a73346b444f6e2e706e67" width="50"/></a> <a href="https://kicanvas.org/?github=https%3A%2F%2Fgithub.com%2FPaschalis%2FUAV-TelemetryLink%2Ftree%2Fmain%2FReceivers%2520and%2520Transmitters%2FTransmitters%2FShared%2520for%2520Single%2520Antenna%252C%2520Antenna%2520Diversity%252C%2520True%2520or%2520Full%2520Diversity%2FExpressLRS_2.4GHz%2FTX2_2.4G" title="Open KiCanvas"><img src="https://kicanvas.org/images/kicanvas.png" width="50"/></a></p> | <p align="center">✅ Approved </p> |
+| TX3_2.4G  | 2.4GHz    | Rev 1.2 | Features both SSD1306 OLED display and TX Backpack for GCS communication.| [![Preview](docs/Images/TX3.png)](https://github.com/Paschalis/UAV-TelemetryLink/tree/main/Receivers%20and%20Transmitters/Transmitters/Shared%20for%20Single%20Antenna%2C%20Antenna%20Diversity%2C%20True%20or%20Full%20Diversity/ExpressLRS_2.4GHz/TX3_2.4G)<br/><sub><p align="center">Click on the image to view the files</p></sub> | <p align="center"><a href="https://github.com/Paschalis/UAV-TelemetryLink/blob/main/Receivers%20and%20Transmitters/Transmitters/Shared%20for%20Single%20Antenna%2C%20Antenna%20Diversity%2C%20True%20or%20Full%20Diversity/ExpressLRS_2.4GHz/TX3_2.4G/bom/ibom.html" title="Open iBOM"><img src="https://camo.githubusercontent.com/bc5c83fb1cac5664c9e3bec8b7156b34375e57d408f5e6c0be80c819796e657b/68747470733a2f2f692e696d6775722e636f6d2f6a73346b444f6e2e706e67" width="50"/></a> <a href="https://kicanvas.org/?github=https%3A%2F%2Fgithub.com%2FPaschalis%2FUAV-TelemetryLink%2Ftree%2Fmain%2FReceivers%2520and%2520Transmitters%2FTransmitters%2FShared%2520for%2520Single%2520Antenna%252C%2520Antenna%2520Diversity%252C%2520True%2520or%2520Full%2520Diversity%2FExpressLRS_2.4GHz%2FTX3_2.4G" title="Open KiCanvas"><img src="https://kicanvas.org/images/kicanvas.png" width="50"/></a></p> | <p align="center"> Draft </p> |
+| TX1_900M  | 900MHz    |  | Robust transmitter for 900MHz band, suitable for longer-range links.     | [![Preview](docs/Images/TX1_900M.png)](https://github.com/Paschalis/UAV-TelemetryLink/tree/main/Receivers%20and%20Transmitters/Transmitters/Shared%20for%20Single%20Antenna%2C%20Antenna%20Diversity%2C%20True%20or%20Full%20Diversity/ExpressLRS_900MHz/TX1_900M)<br/><sub><p align="center">Click on the image to view the files</p></sub> | <p align="center"><a href="https://github.com/Paschalis/UAV-TelemetryLink/blob/main/Receivers%20and%20Transmitters/Transmitters/Shared%20for%20Single%20Antenna%2C%20Antenna%20Diversity%2C%20True%20or%20Full%20Diversity/ExpressLRS_900MHz/TX1_900M/bom/ibom.html" title="Open iBOM"><img src="https://camo.githubusercontent.com/bc5c83fb1cac5664c9e3bec8b7156b34375e57d408f5e6c0be80c819796e657b/68747470733a2f2f692e696d6775722e636f6d2f6a73346b444f6e2e706e67" width="50"/></a> <a href="https://kicanvas.org/?github=https%3A%2F%2Fgithub.com%2FPaschalis%2FUAV-TelemetryLink%2Ftree%2Fmain%2FReceivers%2520and%2520Transmitters%2FTransmitters%2FShared%2520for%2520Single%2520Antenna%252C%2520Antenna%2520Diversity%252C%2520True%2520or%2520Full%2520Diversity%2FExpressLRS_900MHz%2FTX1_900M" title="Open KiCanvas"><img src="https://kicanvas.org/images/kicanvas.png" width="50"/></a></p> |  <p align="center"> Draft </p> |
+
 
 ## 3. Gemini Mode Boards  
 
@@ -122,24 +156,34 @@ This repository contains a collection of designs for RX and TX boards under diff
 >  
 > 📖 **Reference:** [ExpressLRS Gemini Mode Documentation](https://www.expresslrs.org/software/gemini/#what-is-gemini)  
 
+
+
 ### TX Boards  
-| Name   | Frequency            | Features                                      | Preview                                                       |
-|--------|----------------------|----------------------------------------------|------------------------------------------------------------|
-| G_TX1_2.4G | 2.4GHz     | The transmitter sends packets on two frequencies within the same band, spaced approximately 40 MHz apart for 2.4 GHz.  | [![Preview](docs/Images/G_TX1_2.4G.png)](https://github.com/Paschalis/UAV-TelemetryLink/tree/main/Receivers%20and%20Transmitters/Transmitters/Gemini%20Mode%20(Single%20Band)/G_TX1)  <p align="center"> Click on the image to view the files </p> |
-| G_TX1_900M | 900MHz      | The transmitter sends packets on two frequencies within the same band, spaced approximately 10 MHz apart for 900MHz. | [![Preview](docs/Images/GX_TX1_900M.png)](https://github.com/your-repo/boards/GX_TX1) |
+
+| Name        | Frequency | Version | Features                                                                                          | Preview                                                                                                                                                                                                                                           | View | Status |
+|-------------|-----------|---------|---------------------------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|--------|--------|
+| G_TX1_2.4G  | 2.4GHz    | Rev 1.0 | Sends packets on two frequencies ~40 MHz apart in the 2.4 GHz band. | [![Preview](Images/GTX1_2.4G.gif)](https://github.com/Paschalis/UAV-TelemetryLink/tree/main/Receivers%20and%20Transmitters/Transmitters/Gemini%20Mode%20(Single%20Band)/G_TX1)<br/><sub><p align="center">Click on the image to view the files</p></sub> | <p align="center"> <a href="https://github.com/Paschalis/UAV-TelemetryLink/blob/main/Receivers%20and%20Transmitters/Transmitters/Gemini%20Mode%20(Single%20Band)/G_TX1/bom/ibom.html" title="Open iBOM"><img src="https://camo.githubusercontent.com/bc5c83fb1cac5664c9e3bec8b7156b34375e57d408f5e6c0be80c819796e657b/68747470733a2f2f692e696d6775722e636f6d2f6a73346b444f6e2e706e67" width="50"/></a> <a href="https://kicanvas.org/?github=https%3A%2F%2Fgithub.com%2FPaschalis%2FUAV-TelemetryLink%2Ftree%2Fmain%2FReceivers%2520and%2520Transmitters%2FTransmitters%2FGemini%2520Mode%2520%28Single%2520Band%29%2FG_TX1" title="Open KiCanvas"><img src="https://kicanvas.org/images/kicanvas.png" width="50"/></a> </p> | <p align="center">✅ Approved </p> |
+| G_TX1_900M  | 900MHz    | | Sends packets on two frequencies ~10 MHz apart in the 900 MHz band. | [![Preview](docs/Images/GX_TX1_900M.png)](https://github.com/Paschalis/UAV-TelemetryLink/tree/main/Receivers%20and%20Transmitters/Transmitters/Gemini%20Mode%20(Single%20Band)/G_TX1_900M)<br/><sub><p align="center">Click on the image to view the files</p></sub> | <p align="center"> <a href="https://github.com/Paschalis/UAV-TelemetryLink/blob/main/Receivers%20and%20Transmitters/Transmitters/Gemini%20Mode%20(Single%20Band)/G_TX1_900M/bom/ibom.html" title="Open iBOM"><img src="https://camo.githubusercontent.com/bc5c83fb1cac5664c9e3bec8b7156b34375e57d408f5e6c0be80c819796e657b/68747470733a2f2f692e696d6775722e636f6d2f6a73346b444f6e2e706e67" width="50"/></a> <a href="https://kicanvas.org/?github=https%3A%2F%2Fgithub.com%2FPaschalis%2FUAV-TelemetryLink%2Ftree%2Fmain%2FReceivers%2520and%2520Transmitters%2FTransmitters%2FGemini%2520Mode%2520%28Single%2520Band%29%2FG_TX1_900M" title="Open KiCanvas"><img src="https://kicanvas.org/images/kicanvas.png" width="50"/></a> </p> | <p align="center"> Draft </p> |
 
 
 ## 4. Gemini Xrossband (GemX) Boards  
 
+---
+
 ### RX Boards  
-| Name  | Frequency            | Features                                | Preview                                                       |
-|-------|----------------------|-----------------------------------------|------------------------------------------------------------|
-| GX1   | 2.4GHz & 900MHz      | Crossband receiver for 2.4GHz and 900MHz | [![Preview](Images/GX1.png)](https://github.com/your-repo/boards/GX1) |
+
+| Name  | Frequency        | Version | Features                                | Preview                                                                                                         | View | Status |
+|-------|------------------|---------|-----------------------------------------|---------------------------------------------------------------------------------------------------------------|--------|--------|
+| GX1   | 2.4GHz & 900MHz  |  | Crossband receiver for 2.4GHz and 900MHz | [![Preview](Images/GX1.png)](https://github.com/your-repo/boards/GX1)<br/><sub>Click the image to view files</sub> | <p align="center"> <a href="https://github.com/your-repo/boards/GX1/bom/ibom.html" title="Open iBOM"><img src="https://camo.githubusercontent.com/bc5c83fb1cac5664c9e3bec8b7156b34375e57d408f5e6c0be80c819796e657b/68747470733a2f2f692e696d6775722e636f6d2f6a73346b444f6e2e706e67" width="50"/></a> <a href="https://kicanvas.org/?github=https%3A%2F%2Fgithub.com%2Fyour-repo%2Fboards%2FGX1" title="Open KiCanvas"><img src="https://kicanvas.org/images/kicanvas.png" width="50"/></a> </p> |  <p align="center"> Draft </p> |
+
+---
 
 ### TX Boards  
-| Name   | Frequency            | Features                                      | Preview                                                       |
-|--------|----------------------|----------------------------------------------|------------------------------------------------------------|
-| GX_TX1 | 2.4GHz & 900MHz      | Crossband transmitter for 2.4GHz and 900MHz | [![Preview](Images/GX_TX1.png)](https://github.com/your-repo/boards/GX_TX1) |
+
+| Name   | Frequency        | Version | Features                                      | Preview                                                                                                            | View | Status |
+|--------|------------------|---------|----------------------------------------------|--------------------------------------------------------------------------------------------------------------------|--------|--------|
+| GX_TX1 | 2.4GHz & 900MHz  |  | Crossband transmitter for 2.4GHz and 900MHz   | [![Preview](Images/GX_TX1.png)](https://github.com/your-repo/boards/GX_TX1)<br/><sub>Click the image to view files</sub> | <p align="center"> <a href="https://github.com/your-repo/boards/GX_TX1/bom/ibom.html" title="Open iBOM"><img src="https://camo.githubusercontent.com/bc5c83fb1cac5664c9e3bec8b7156b34375e57d408f5e6c0be80c819796e657b/68747470733a2f2f692e696d6775722e636f6d2f6a73346b444f6e2e706e67" width="50"/></a> <a href="https://kicanvas.org/?github=https%3A%2F%2Fgithub.com%2Fyour-repo%2Fboards%2FGX_TX1" title="Open KiCanvas"><img src="https://kicanvas.org/images/kicanvas.png" width="50"/></a> </p> |  <p align="center"> Draft </p> |
+
 
 
 ## Contributing
@@ -153,7 +197,9 @@ We would like to thank the following for making this project possible:
 - **ELRS (ExpressLRS)**: High-performance, low-latency long-range communication for UAVs.  
 - **mLRS (MAVLink Long Range System)**: MAVLink-based long-range telemetry and control extension for ELRS.  
 - **MAVLink**: The essential protocol for UAV communication and mission control.  
-- **QGroundControl (QGC)**: Open-source ground control software for UAV mission planning.  
+- **QGroundControl (QGC)**: Open-source ground control software for UAV mission planning. 
+- **OpenTX**: Open-source firmware for RC transmitters, enabling extensive customization and telemetry support.  
+- **OpenI6X**: A custom OpenTX / EdgeTX port for the Flysky FS-i6X transmitter, expanding its capabilities and MAVLink support.   
 - **Other Contributors**: Thanks to all who contributed feedback, bug fixes, and improvements.
 
 These open-source tools and protocols are integral to the success of this project.

@@ -8,7 +8,10 @@
 		(title "ESP8285")
 		(date "2025-03-30")
 		(rev "1.0")
-		(company "https://github.com/Paschalis | TeodoraMiu")
+		(company "https://github.com/Paschalis")
+		(comment 1 "protocol between the transmitter module and ground control systems.")
+		(comment 2 "enables low-latency, wireless telemetry transmission via the ESP-NOW ")
+		(comment 3 "The ESP8285 in the TX-Backpack serves as a compact Wi-Fi MCU that ")
 	)
 	(lib_symbols
 		(symbol "Device:C_Small"
@@ -1536,43 +1539,44 @@
 		)
 		(symbol "W3008:W3008"
 			(pin_names
-				(offset 0.254)
+				(offset 1.016)
 			)
 			(exclude_from_sim no)
 			(in_bom yes)
 			(on_board yes)
-			(property "Reference" "AE"
-				(at 2.2606 6.985 0)
+			(property "Reference" "ANT"
+				(at -2.5422 5.7198 0)
 				(effects
 					(font
-						(size 1.524 1.524)
+						(size 1.27 1.27)
 					)
+					(justify left bottom)
 				)
 			)
 			(property "Value" "W3008"
-				(at 2.2606 3.175 0)
+				(at -2.5445 -8.9059 0)
 				(effects
 					(font
-						(size 1.524 1.524)
+						(size 1.27 1.27)
 					)
+					(justify left bottom)
 				)
 			)
-			(property "Footprint" "ANT_W3008_PUL"
+			(property "Footprint" "W3008:ANTENNA_W3008"
 				(at 0 0 0)
 				(effects
 					(font
 						(size 1.27 1.27)
-						(italic yes)
 					)
+					(justify bottom)
 					(hide yes)
 				)
 			)
-			(property "Datasheet" "W3008"
+			(property "Datasheet" ""
 				(at 0 0 0)
 				(effects
 					(font
 						(size 1.27 1.27)
-						(italic yes)
 					)
 					(hide yes)
 				)
@@ -1586,39 +1590,113 @@
 					(hide yes)
 				)
 			)
-			(property "ki_locked" ""
+			(property "MF" "PulseLarsen Antennas"
 				(at 0 0 0)
 				(effects
 					(font
 						(size 1.27 1.27)
 					)
-				)
-			)
-			(property "ki_keywords" "W3008"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
+					(justify bottom)
 					(hide yes)
 				)
 			)
-			(property "ki_fp_filters" "ANT_W3008_PUL ANT_W3008_PUL-M ANT_W3008_PUL-L"
+			(property "Description_1" "2.4GHz Bluetooth, WLAN, Zigbee™ Chip RF Antenna 2.4GHz ~ 2.483GHz 2.2dBi Solder Surface Mount"
 				(at 0 0 0)
 				(effects
 					(font
 						(size 1.27 1.27)
 					)
+					(justify bottom)
 					(hide yes)
 				)
 			)
-			(symbol "W3008_0_1"
+			(property "Package" "None"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify bottom)
+					(hide yes)
+				)
+			)
+			(property "Price" "None"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify bottom)
+					(hide yes)
+				)
+			)
+			(property "Check_prices" "https://www.snapeda.com/parts/W3008/PulseLarsen+Antennas/view-part/?ref=eda"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify bottom)
+					(hide yes)
+				)
+			)
+			(property "STANDARD" "Manufacturer recommendations"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify bottom)
+					(hide yes)
+				)
+			)
+			(property "SnapEDA_Link" "https://www.snapeda.com/parts/W3008/PulseLarsen+Antennas/view-part/?ref=snap"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify bottom)
+					(hide yes)
+				)
+			)
+			(property "MP" "W3008"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify bottom)
+					(hide yes)
+				)
+			)
+			(property "Availability" "Not in stock"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify bottom)
+					(hide yes)
+				)
+			)
+			(property "MANUFACTURER" "PulseLarsen Antennas"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify bottom)
+					(hide yes)
+				)
+			)
+			(symbol "W3008_0_0"
 				(polyline
 					(pts
-						(xy -2.54 10.16) (xy 0 7.62)
+						(xy -2.54 5.08) (xy 0 5.08)
 					)
 					(stroke
-						(width 0.2032)
+						(width 0.1524)
 						(type default)
 					)
 					(fill
@@ -1627,10 +1705,10 @@
 				)
 				(polyline
 					(pts
-						(xy 0 10.16) (xy 0 7.62)
+						(xy -2.54 5.08) (xy 0 2.54)
 					)
 					(stroke
-						(width 0.2032)
+						(width 0.1524)
 						(type default)
 					)
 					(fill
@@ -1639,10 +1717,10 @@
 				)
 				(polyline
 					(pts
-						(xy 0 7.62) (xy 0 2.54)
+						(xy 0 5.08) (xy 0 2.54)
 					)
 					(stroke
-						(width 0.2032)
+						(width 0.1524)
 						(type default)
 					)
 					(fill
@@ -1651,30 +1729,90 @@
 				)
 				(polyline
 					(pts
-						(xy 0 7.62) (xy 2.54 10.16)
+						(xy 0 5.08) (xy 2.54 5.08)
 					)
 					(stroke
-						(width 0.2032)
+						(width 0.1524)
 						(type default)
 					)
 					(fill
 						(type none)
 					)
 				)
-				(pin unspecified line
-					(at 0 0 90)
-					(length 2.54)
-					(name "1"
+				(polyline
+					(pts
+						(xy 0 2.54) (xy 2.54 5.08)
+					)
+					(stroke
+						(width 0.1524)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 0 0) (xy 5.08 0)
+					)
+					(stroke
+						(width 0.1524)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(pin passive line
+					(at 0 -2.54 90)
+					(length 5.08)
+					(name "~"
 						(effects
 							(font
-								(size 1.27 1.27)
+								(size 1.016 1.016)
 							)
 						)
 					)
-					(number "1"
+					(number "FEED"
 						(effects
 							(font
-								(size 1.27 1.27)
+								(size 1.016 1.016)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 5.08 -2.54 90)
+					(length 2.54)
+					(name "~"
+						(effects
+							(font
+								(size 1.016 1.016)
+							)
+						)
+					)
+					(number "G1"
+						(effects
+							(font
+								(size 1.016 1.016)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 5.08 -2.54 90)
+					(length 2.54)
+					(name "~"
+						(effects
+							(font
+								(size 1.016 1.016)
+							)
+						)
+					)
+					(number "G2"
+						(effects
+							(font
+								(size 1.016 1.016)
 							)
 						)
 					)
@@ -2016,6 +2154,12 @@
 		(uuid "e295637b-214f-4623-8db2-c75f188fdb72")
 	)
 	(junction
+		(at 100.33 91.44)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "0a8adaff-b02a-45b3-8a3a-9783090be461")
+	)
+	(junction
 		(at 154.94 46.99)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -2239,6 +2383,16 @@
 	)
 	(wire
 		(pts
+			(xy 90.17 85.09) (xy 90.17 91.44)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "0938019a-1688-4f95-ba2e-21d004f781b6")
+	)
+	(wire
+		(pts
 			(xy 144.78 54.61) (xy 144.78 58.42)
 		)
 		(stroke
@@ -2349,16 +2503,6 @@
 	)
 	(wire
 		(pts
-			(xy 92.71 91.44) (xy 97.79 91.44)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "260bbc77-64e5-4d57-84b3-1c954e8b6834")
-	)
-	(wire
-		(pts
 			(xy 93.98 46.99) (xy 83.82 46.99)
 		)
 		(stroke
@@ -2366,6 +2510,16 @@
 			(type default)
 		)
 		(uuid "27477d7a-c20f-4569-b7ab-8fbfbe1ec0de")
+	)
+	(wire
+		(pts
+			(xy 90.17 91.44) (xy 100.33 91.44)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "2aec99c9-59a7-4612-aa69-6b5f14879cd4")
 	)
 	(wire
 		(pts
@@ -2386,6 +2540,16 @@
 			(type default)
 		)
 		(uuid "2ec64268-34f4-4785-acd6-50d4be82b462")
+	)
+	(wire
+		(pts
+			(xy 100.33 96.52) (xy 100.33 97.79)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "2f39a5a2-fe62-46f8-be04-c27116e4a86e")
 	)
 	(wire
 		(pts
@@ -2416,6 +2580,16 @@
 			(type default)
 		)
 		(uuid "3a730de6-64d0-46d3-9c0d-e025c4a76db0")
+	)
+	(wire
+		(pts
+			(xy 95.25 85.09) (xy 95.25 86.36)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "426211d8-e293-4232-864a-d77b32bbe5b7")
 	)
 	(wire
 		(pts
@@ -2599,16 +2773,6 @@
 	)
 	(wire
 		(pts
-			(xy 102.87 91.44) (xy 116.84 91.44)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "6c4280dd-f5b3-4046-8fcc-c53e37098e74")
-	)
-	(wire
-		(pts
 			(xy 205.74 106.68) (xy 207.01 106.68)
 		)
 		(stroke
@@ -2776,16 +2940,6 @@
 			(type default)
 		)
 		(uuid "8e3798b9-0185-4a55-895f-ee824ae0aedd")
-	)
-	(wire
-		(pts
-			(xy 92.71 90.17) (xy 92.71 91.44)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "9394ea2d-d68a-48fb-a1cc-b535085df5d2")
 	)
 	(wire
 		(pts
@@ -3026,6 +3180,16 @@
 			(type default)
 		)
 		(uuid "ce9b214a-f9fa-4038-8dce-36f7e03c7fc2")
+	)
+	(wire
+		(pts
+			(xy 100.33 91.44) (xy 116.84 91.44)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "d83577a3-4cc4-4c61-a24c-4bf7f15f141c")
 	)
 	(wire
 		(pts
@@ -3698,7 +3862,7 @@
 	)
 	(symbol
 		(lib_id "Device:C_Small")
-		(at 100.33 91.44 90)
+		(at 100.33 93.98 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -3706,7 +3870,7 @@
 		(dnp no)
 		(uuid "3a4df57d-2c84-4457-b1da-0f935c286ac7")
 		(property "Reference" "C33"
-			(at 101.346 88.9 90)
+			(at 94.488 93.218 0)
 			(effects
 				(font
 					(size 1 1)
@@ -3714,8 +3878,8 @@
 				(justify left)
 			)
 		)
-		(property "Value" "5.6pF"
-			(at 103.124 94.234 90)
+		(property "Value" "1.5pF"
+			(at 94.234 94.996 0)
 			(effects
 				(font
 					(size 1 1)
@@ -3724,7 +3888,7 @@
 			)
 		)
 		(property "Footprint" "Capacitor_SMD:C_01005_0402Metric_Pad0.57x0.30mm_HandSolder"
-			(at 100.33 91.44 0)
+			(at 100.33 93.98 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3733,7 +3897,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 100.33 91.44 0)
+			(at 100.33 93.98 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3742,7 +3906,7 @@
 			)
 		)
 		(property "Description" "Unpolarized capacitor, small symbol"
-			(at 100.33 91.44 0)
+			(at 100.33 93.98 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3837,6 +4001,245 @@
 	)
 	(symbol
 		(lib_id "power:GND")
+		(at 100.33 97.79 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "3efdd507-51fc-4db3-bf57-48fc171591f5")
+		(property "Reference" "#PWR015"
+			(at 100.33 104.14 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "GND"
+			(at 100.33 101.346 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 100.33 97.79 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 100.33 97.79 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 100.33 97.79 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "4eb2ca46-5480-4b0b-a629-04a46a5ea6fd")
+		)
+		(instances
+			(project "G_TX1"
+				(path "/32640adb-d3ae-4079-8814-1903180e0e12/36e48682-81ba-44b4-b268-d93465b8c4e7"
+					(reference "#PWR015")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "W3008:W3008")
+		(at 90.17 82.55 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "4180928c-a61b-4424-891b-18ec1084aa75")
+		(property "Reference" "ANT1"
+			(at 96.52 78.7399 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "W3008"
+			(at 96.52 81.2799 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "W3008:ANTENNA_W3008"
+			(at 90.17 82.55 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify bottom)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 90.17 82.55 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 90.17 82.55 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MF" "PulseLarsen Antennas"
+			(at 90.17 82.55 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify bottom)
+				(hide yes)
+			)
+		)
+		(property "Description_1" "2.4GHz Bluetooth, WLAN, Zigbee™ Chip RF Antenna 2.4GHz ~ 2.483GHz 2.2dBi Solder Surface Mount"
+			(at 90.17 82.55 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify bottom)
+				(hide yes)
+			)
+		)
+		(property "Package" "None"
+			(at 90.17 82.55 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify bottom)
+				(hide yes)
+			)
+		)
+		(property "Price" "None"
+			(at 90.17 82.55 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify bottom)
+				(hide yes)
+			)
+		)
+		(property "Check_prices" "https://www.snapeda.com/parts/W3008/PulseLarsen+Antennas/view-part/?ref=eda"
+			(at 90.17 82.55 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify bottom)
+				(hide yes)
+			)
+		)
+		(property "STANDARD" "Manufacturer recommendations"
+			(at 90.17 82.55 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify bottom)
+				(hide yes)
+			)
+		)
+		(property "SnapEDA_Link" "https://www.snapeda.com/parts/W3008/PulseLarsen+Antennas/view-part/?ref=snap"
+			(at 90.17 82.55 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify bottom)
+				(hide yes)
+			)
+		)
+		(property "MP" "W3008"
+			(at 90.17 82.55 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify bottom)
+				(hide yes)
+			)
+		)
+		(property "Availability" "Not in stock"
+			(at 90.17 82.55 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify bottom)
+				(hide yes)
+			)
+		)
+		(property "MANUFACTURER" "PulseLarsen Antennas"
+			(at 90.17 82.55 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify bottom)
+				(hide yes)
+			)
+		)
+		(pin "G2"
+			(uuid "fb5d8e75-c918-43d8-8d7b-848aa55645f1")
+		)
+		(pin "G1"
+			(uuid "effd2d64-862f-4e2c-8a45-cde83f3886aa")
+		)
+		(pin "FEED"
+			(uuid "7dfeaaca-678c-48ca-a33f-5ef3d47237f8")
+		)
+		(instances
+			(project ""
+				(path "/32640adb-d3ae-4079-8814-1903180e0e12/36e48682-81ba-44b4-b268-d93465b8c4e7"
+					(reference "ANT1")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GND")
 		(at 154.94 58.42 0)
 		(unit 1)
 		(exclude_from_sim no)
@@ -3895,6 +4298,71 @@
 			(project "TX3_2.4G"
 				(path "/32640adb-d3ae-4079-8814-1903180e0e12/36e48682-81ba-44b4-b268-d93465b8c4e7"
 					(reference "#PWR052")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GND")
+		(at 95.25 86.36 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "51ddcd55-babf-439c-90ca-7f4950d7de9d")
+		(property "Reference" "#PWR70"
+			(at 95.25 92.71 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "GND"
+			(at 95.25 89.916 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 95.25 86.36 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 95.25 86.36 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 95.25 86.36 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "59079b8d-8f28-4875-8623-a3c2f0ec0c2c")
+		)
+		(instances
+			(project "G_TX1"
+				(path "/32640adb-d3ae-4079-8814-1903180e0e12/36e48682-81ba-44b4-b268-d93465b8c4e7"
+					(reference "#PWR70")
 					(unit 1)
 				)
 			)
@@ -4098,75 +4566,6 @@
 			(project "TX3_2.4G"
 				(path "/32640adb-d3ae-4079-8814-1903180e0e12/36e48682-81ba-44b4-b268-d93465b8c4e7"
 					(reference "#PWR058")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "W3008:W3008")
-		(at 92.71 90.17 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "69a8ecc0-f4a9-4cef-acef-88e657df88aa")
-		(property "Reference" "AE1"
-			(at 96.52 82.5499 0)
-			(effects
-				(font
-					(size 1.524 1.524)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "W3008"
-			(at 96.52 85.0899 0)
-			(effects
-				(font
-					(size 1.524 1.524)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" "W3008:ANT_W3008_PUL"
-			(at 92.71 90.17 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-					(italic yes)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "W3008"
-			(at 92.71 90.17 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-					(italic yes)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" ""
-			(at 92.71 90.17 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "39626aab-081f-4633-937c-1c7b6a7e37be")
-		)
-		(instances
-			(project "TX3_2.4G"
-				(path "/32640adb-d3ae-4079-8814-1903180e0e12/36e48682-81ba-44b4-b268-d93465b8c4e7"
-					(reference "AE1")
 					(unit 1)
 				)
 			)
