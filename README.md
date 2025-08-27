@@ -138,6 +138,15 @@ This repository contains a collection of designs for RX and TX boards under diff
 
 
 ## TX Boards (Shared for Single Antenna, Antenna Diversity & True Diversity)
+<div align="center">
+
+<img src="Images/case1.jpg" alt="MonitorPreview" width="650">
+
+[📂 Click here to open the enclosure files](https://github.com/Paschalis/UAV-TelemetryLink/tree/main/Receivers%20and%20Transmitters/Transmitters/Mechanical%20CAD)
+
+<img src="Images/case2.png" alt="MonitorPreview" width="650">
+
+</div>
 
 > **Note:**  
 > The TX boards listed in this section are shared across **Single Antenna Mode, Antenna Diversity, and True Diversity** configurations.  
