@@ -464,6 +464,7 @@
       "single_global_label": "ignore",
       "unannotated": "error",
       "unconnected_wire_endpoint": "warning",
+      "undefined_netclass": "error",
       "unit_value_mismatch": "error",
       "unresolved_variable": "error",
       "wire_dangling": "error"
@@ -689,7 +690,7 @@
     },
     "net_format_name": "",
     "page_layout_descr_file": "/home/universitylaptop/GitHub Repositories/Paschalis_Sheet_Template.kicad_wks",
-    "plot_directory": "",
+    "plot_directory": "/home/universitylaptop/Desktop/",
     "space_save_all_events": true,
     "spice_current_sheet_as_root": false,
     "spice_external_command": "spice \"%I\"",
