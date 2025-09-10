@@ -37,9 +37,9 @@
         "other_text_thickness": 0.15,
         "other_text_upright": false,
         "pads": {
-          "drill": 0.7,
-          "height": 1.4,
-          "width": 1.4
+          "drill": 0.3,
+          "height": 0.61,
+          "width": 0.61
         },
         "silk_line_width": 0.1,
         "silk_text_italic": false,
@@ -134,11 +134,11 @@
         "min_microvia_drill": 0.1,
         "min_resolved_spokes": 1,
         "min_silk_clearance": 0.0,
-        "min_text_height": 0.8,
-        "min_text_thickness": 0.08,
+        "min_text_height": 0.5,
+        "min_text_thickness": 0.0625,
         "min_through_hole_diameter": 0.3,
         "min_track_width": 0.0,
-        "min_via_annular_width": 0.075,
+        "min_via_annular_width": 0.07,
         "min_via_diameter": 0.45,
         "solder_mask_to_copper_clearance": 0.0,
         "use_height_for_length_calcs": true
@@ -454,7 +454,7 @@
       "no_connect_dangling": "warning",
       "pin_not_connected": "error",
       "pin_not_driven": "error",
-      "pin_to_pin": "warning",
+      "pin_to_pin": "error",
       "power_pin_not_driven": "error",
       "same_local_global_label": "warning",
       "similar_label_and_power": "warning",
@@ -464,6 +464,7 @@
       "single_global_label": "ignore",
       "unannotated": "error",
       "unconnected_wire_endpoint": "warning",
+      "undefined_netclass": "error",
       "unit_value_mismatch": "error",
       "unresolved_variable": "error",
       "wire_dangling": "error"
@@ -493,8 +494,35 @@
         "priority": 2147483647,
         "schematic_color": "rgba(0, 0, 0, 0.000)",
         "track_width": 0.15,
-        "via_diameter": 0.45,
+        "via_diameter": 0.61,
         "via_drill": 0.3,
+        "wire_width": 6
+      },
+      {
+        "bus_width": 12,
+        "line_style": 0,
+        "name": "+2.8V",
+        "pcb_color": "rgba(0, 0, 0, 0.000)",
+        "priority": 9,
+        "schematic_color": "rgba(0, 0, 0, 0.000)",
+        "wire_width": 6
+      },
+      {
+        "bus_width": 12,
+        "line_style": 0,
+        "name": "+3.3V",
+        "pcb_color": "rgba(0, 0, 0, 0.000)",
+        "priority": 8,
+        "schematic_color": "rgba(0, 0, 0, 0.000)",
+        "wire_width": 6
+      },
+      {
+        "bus_width": 12,
+        "line_style": 0,
+        "name": "+5V",
+        "pcb_color": "rgba(0, 0, 0, 0.000)",
+        "priority": 10,
+        "schematic_color": "rgba(0, 0, 0, 0.000)",
         "wire_width": 6
       },
       {
@@ -507,10 +535,10 @@
         "microvia_drill": 0.1,
         "name": "100ohm",
         "pcb_color": "rgb(255, 0, 255)",
-        "priority": 0,
+        "priority": 11,
         "schematic_color": "rgba(0, 0, 0, 0.000)",
         "track_width": 0.127,
-        "via_diameter": 0.45,
+        "via_diameter": 0.61,
         "via_drill": 0.3,
         "wire_width": 6
       },
@@ -524,10 +552,10 @@
         "microvia_drill": 0.1,
         "name": "50ohm",
         "pcb_color": "rgb(255, 255, 0)",
-        "priority": 1,
+        "priority": 12,
         "schematic_color": "rgba(0, 0, 0, 0.000)",
         "track_width": 0.13,
-        "via_diameter": 0.45,
+        "via_diameter": 0.61,
         "via_drill": 0.3,
         "wire_width": 6
       },
@@ -541,11 +569,83 @@
         "microvia_drill": 0.1,
         "name": "90ohm",
         "pcb_color": "rgb(0, 195, 0)",
-        "priority": 2,
+        "priority": 13,
         "schematic_color": "rgba(0, 0, 0, 0.000)",
         "track_width": 0.147,
-        "via_diameter": 0.45,
+        "via_diameter": 0.61,
         "via_drill": 0.3,
+        "wire_width": 6
+      },
+      {
+        "bus_width": 12,
+        "line_style": 0,
+        "name": "GND",
+        "pcb_color": "rgba(0, 0, 0, 0.000)",
+        "priority": 7,
+        "schematic_color": "rgba(0, 0, 0, 0.000)",
+        "wire_width": 6
+      },
+      {
+        "bus_width": 12,
+        "line_style": 0,
+        "name": "MISO",
+        "pcb_color": "rgba(0, 0, 0, 0.000)",
+        "priority": 3,
+        "schematic_color": "rgba(0, 0, 0, 0.000)",
+        "wire_width": 6
+      },
+      {
+        "bus_width": 12,
+        "line_style": 0,
+        "name": "MOSI",
+        "pcb_color": "rgba(0, 0, 0, 0.000)",
+        "priority": 4,
+        "schematic_color": "rgba(0, 0, 0, 0.000)",
+        "wire_width": 6
+      },
+      {
+        "bus_width": 12,
+        "line_style": 0,
+        "name": "RESET",
+        "pcb_color": "rgba(0, 0, 0, 0.000)",
+        "priority": 1,
+        "schematic_color": "rgba(0, 0, 0, 0.000)",
+        "wire_width": 6
+      },
+      {
+        "bus_width": 12,
+        "line_style": 0,
+        "name": "RF",
+        "pcb_color": "rgba(0, 0, 0, 0.000)",
+        "priority": 0,
+        "schematic_color": "rgba(0, 0, 0, 0.000)",
+        "wire_width": 6
+      },
+      {
+        "bus_width": 12,
+        "line_style": 1,
+        "name": "RX",
+        "pcb_color": "rgba(0, 0, 0, 0.000)",
+        "priority": 5,
+        "schematic_color": "rgba(0, 0, 0, 0.000)",
+        "wire_width": 6
+      },
+      {
+        "bus_width": 12,
+        "line_style": 0,
+        "name": "SCK",
+        "pcb_color": "rgba(0, 0, 0, 0.000)",
+        "priority": 2,
+        "schematic_color": "rgba(0, 0, 0, 0.000)",
+        "wire_width": 6
+      },
+      {
+        "bus_width": 12,
+        "line_style": 1,
+        "name": "TX",
+        "pcb_color": "rgba(0, 0, 0, 0.000)",
+        "priority": 6,
+        "schematic_color": "rgba(0, 0, 0, 0.000)",
         "wire_width": 6
       }
     ],
@@ -582,6 +682,78 @@
       {
         "netclass": "100ohm",
         "pattern": "/*HDMI_P*.CK*"
+      },
+      {
+        "netclass": "+5V",
+        "pattern": "+5V"
+      },
+      {
+        "netclass": "+5V",
+        "pattern": "F2"
+      },
+      {
+        "netclass": "GND",
+        "pattern": "GND"
+      },
+      {
+        "netclass": "MISO",
+        "pattern": "/MISO"
+      },
+      {
+        "netclass": "MOSI",
+        "pattern": "/MOSI"
+      },
+      {
+        "netclass": "SCK",
+        "pattern": "/SCK"
+      },
+      {
+        "netclass": "RESET",
+        "pattern": "/RESET"
+      },
+      {
+        "netclass": "TX",
+        "pattern": "/TX"
+      },
+      {
+        "netclass": "RX",
+        "pattern": "/RX"
+      },
+      {
+        "netclass": "+3.3V",
+        "pattern": "+3.3V"
+      },
+      {
+        "netclass": "RF",
+        "pattern": "/RFX2401C_ANT2/FL2"
+      },
+      {
+        "netclass": "RF",
+        "pattern": "/RFX2401C_ANT2/ANT2"
+      },
+      {
+        "netclass": "RF",
+        "pattern": "/RFX2401C_ANT1/ANT1"
+      },
+      {
+        "netclass": "RF",
+        "pattern": "/RFX2401C_ANT1/FL1"
+      },
+      {
+        "netclass": "+2.8V",
+        "pattern": "+2.8V"
+      },
+      {
+        "netclass": "Default",
+        "pattern": "/MISO"
+      },
+      {
+        "netclass": "Default",
+        "pattern": "/MOSI"
+      },
+      {
+        "netclass": "Default",
+        "pattern": "/TX"
       }
     ]
   },
